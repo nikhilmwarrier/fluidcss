@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fira+Code:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
   /*Customize*/
@@ -17,9 +19,9 @@
   --link-hover-color: rgb(2, 83, 83);
   --accent-text: #ffffff;
 
-  --serif-font: serif; /*For Headings*/
-  --sans-serif-font: "Ubuntu", sans-serif; /*For Text*/
-  --code-font: monospace; /*For Code Snippets, etc*/
+  --serif-font: "Noto Serif"; /*Serif*/
+  --sans-serif-font: "Ubuntu", sans-serif; /*Sans-serif*/
+  --code-font: "Fira Code", monospace; /*Monospace*/
 
   --navbar-text-color: rgb(255, 255, 255);
   --navbar-height: 70px;
