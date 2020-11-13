@@ -52,6 +52,8 @@ body {
   font-family: var(--sans-serif-font);
   font-size: 1.2rem;
   color: var(--text-color);
+  scrollbar-color: var(--accent-color) var(--border-color);
+  scrollbar-width: normal;
 }
 
 .container {
@@ -163,6 +165,28 @@ hr {
 ::selection {
   background-color: var(--accent-color);
   color: var(--accent-text);
+}
+
+
+/*Custom Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--border-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-darker);
 }
 
 .btn {
@@ -286,6 +310,8 @@ aside {
   width: var(--aside-width);
   border-right: 1px solid var(--border-color);
   overflow-y: auto;
+  scrollbar-color: var(--accent-color) var(--border-color);
+  scrollbar-width: normal;
 }
 
 aside p,
@@ -313,7 +339,7 @@ aside ul > a {
     position: relative;
     width: 100%;
     border: none;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
     margin: none;
     height: auto;
     max-height: 40vh;
@@ -371,3 +397,4 @@ aside ul > a {
 .switch-input:checked + .switch-label::after {
   left: 28px;
 }
+/*line 400*/
