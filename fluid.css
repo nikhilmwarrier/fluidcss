@@ -310,7 +310,7 @@ aside ul > a {
     position: relative;
     width: 100%;
     border: none;
-    border-bottom: 2px solid var(--accent-darker);
+    border-bottom: 1px solid var(--border-color);
     margin: none;
     height: auto;
     max-height: 40vh;
