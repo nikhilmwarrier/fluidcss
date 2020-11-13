@@ -233,7 +233,7 @@ nav a:hover {
   height: 0px;
   width: 250px;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: var(--navbar-height);
   right: 0;
   background-color: var(--accent-semitransparent);
@@ -275,7 +275,7 @@ nav a:hover {
 
 aside {
   background-color: inherit;
-  z-index: 1000;
+  z-index: 10;
   position: fixed;
   top: var(--navbar-height);
   left: 0;
