@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
+    height: 100vh;
+    font-family: var(--sans-serif-font);
+    font-size: 1.2rem;
+    color: var(--text-color);
+    scrollbar-color: var(--accent-color) var(--border-color);
+    scrollbar-width: normal;
+}
+
+footer {
+    min-height: var(--navbar-height);
+    background-color: var(--border-color);
+    width: 100%;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    color: var(--text-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}

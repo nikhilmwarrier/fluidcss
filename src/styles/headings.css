@@ -1,0 +1,34 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--accent-darker);
+    margin: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: normal;
+    /* border-bottom: 1px solid var(--border-color); */
+}
+
+@media screen and (min-width: 768px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        max-width: 60vw;
+        margin: auto;
+    }
+}
+
+hr {
+    width: 60%;
+    border: none;
+    background-color: var(--border-color);
+    height: 1px;
+}

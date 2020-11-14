@@ -1,0 +1,24 @@
+p {
+    margin: 20px;
+    color: var(--text-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+p img {
+    max-width: 90%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 0;
+}
+
+p.hero-text {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    p {
+        max-width: 60vw;
+        margin: auto;
+    }
+}

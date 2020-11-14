@@ -1,0 +1,45 @@
+aside {
+    background-color: inherit;
+    z-index: 10;
+    position: fixed;
+    top: var(--navbar-height);
+    left: 0;
+    height: calc(100vh - var(--navbar-height));
+    width: var(--aside-width);
+    border-right: 1px solid var(--border-color);
+    overflow-y: auto;
+    scrollbar-color: var(--accent-color) var(--border-color);
+    scrollbar-width: normal;
+}
+
+aside p,
+aside a,
+aside ul,
+aside ol,
+aside li {
+    margin: 20px;
+    font-weight: 300;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0px;
+    font-weight: 400;
+}
+
+aside ul > a {
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+    aside {
+        position: relative;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid var(--border-color);
+        margin: none;
+        height: auto;
+        max-height: 40vh;
+    }
+}

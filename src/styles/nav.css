@@ -1,0 +1,41 @@
+nav {
+    height: var(--navbar-height);
+    position: var(--navbar-type);
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--accent-color);
+    color: var(--navbar-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+nav div.links,
+nav div.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+nav div.logo img {
+    max-height: 100%;
+}
+
+nav a {
+    padding: 23px;
+    color: var(--navbar-text-color);
+}
+
+nav a:hover {
+    background-color: var(--accent-darker);
+    color: var(--navbar-text-color);
+    text-decoration: none;
+}
+
+#contr-nav {
+    display: none;
+}

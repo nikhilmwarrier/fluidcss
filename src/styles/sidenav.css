@@ -1,0 +1,39 @@
+.sidenav {
+    height: 0px;
+    width: 250px;
+    position: fixed;
+    z-index: 100;
+    top: var(--navbar-height);
+    right: 0;
+    background-color: var(--accent-semitransparent);
+    backdrop-filter: blur(--background-blur);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+    backdrop-filter: blur(10px);
+    overflow-y: hidden;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--navbar-text-color);
+    display: block;
+    transition: all 0.3s ease-in-out;
+    background: none;
+}
+
+.sidenav a:hover,
+.sidenav a:focus {
+    background-color: var(--accent-darker);
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
