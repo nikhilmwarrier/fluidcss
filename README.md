@@ -5,6 +5,33 @@ Note: If you are looking for the website source code, it is in the [gh-pages](ht
 
 A minimal, hackable css library with responsive design in mind.
 
+### Project Roadmap
+ |Feature|Status|
+ |:---|---:|
+ |Base CSS with CSS custom properties|Ready|
+ |toggle switches|Ready|
+ |Primary and Secondary buttons|Ready|
+ |Navbar|Ready|
+ |Dropdown Navigation*|Ready|
+ |CSS Font Variables|Ready|
+ |Google Material Icons|Ready|
+ |`<aside>` element for fixed sidebar|Ready|
+ |Documentation base template|Ready|
+ |Custom Scrollbar|Ready|
+ |__Documentation for the project__|__Important__|
+ |__`<code>` element customization__|__Important__|
+ |Checkboxes| Pending|
+ |Radio Buttons|Pending|
+ |`<form>` and `<input>`*|Pending|
+ |Modal*|Pending|
+ |Dark Mode with `localStorage()` API*|Pending|
+ |Sharing using `navigator.share` API*|Pending|
+ |Fulscreen templates using `<section>`|Pending|
+ |Page Preloader Animation*|Pending|
+ |CSS variable for `border-radius` property|Pending|
+ 
+
+***
 [Visit the site for more info](https://nikhilmwarrier.github.io/fluidcss)
 ***
 Contributions wholehartedly welcome!
