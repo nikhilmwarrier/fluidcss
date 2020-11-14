@@ -1,5 +1,10 @@
 Note: If you are looking for the website source code, it is in the [gh-pages](https://github.com/nikhilmwarrier/fluidcss/blob/gh-pages/) branch.
 
+Jump to:
+
+- [Project Roadmap](https://github.com/nikhilmwarrier/fluidcss/blob/main/README.md#project-roadmap)
+- [Getting Started](https://github.com/nikhilmwarrier/fluidcss/blob/main/README.md#getting-started)
+
 # FluidCSS
 ![FluidCSS_banner](https://github.com/nikhilmwarrier/fluidcss/blob/gh-pages/res/fluidcss%20-%20banner.png)
 
