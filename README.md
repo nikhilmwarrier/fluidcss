@@ -35,7 +35,17 @@ A minimal, hackable css library with responsive design in mind.
  |__Include SCSS and BEM__|__Help Needed__|
  |__Splitting and Componentializing CSS__|__Under Consideration__|
  
-
+ 
+ ### Getting Started
+ Start by forking this repo and drop a PR. I will respond to all PRs for sure!
+ There will be multiple branches, so check this README from time to time.
+ Also, just before you create a Pull Request, check the repo for any changes or added features.
+ 
+ Current Branches:
+ |Branch|Details|
+ |:---|:---|
+ |`main` | The active development stream.
+ |`gh-pages`| Used for [FluidCSS official site](https://nikhilmwarrier.github.io/fluidcss) 
 ***
 [Visit the site for more info](https://nikhilmwarrier.github.io/fluidcss)
 ***
