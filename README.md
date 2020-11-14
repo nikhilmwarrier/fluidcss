@@ -6,6 +6,9 @@ Note: If you are looking for the website source code, it is in the [gh-pages](ht
 A minimal, hackable css library with responsive design in mind.
 
 ### Project Roadmap
+
+ > Note: `*` implies that that particular feature require JS
+
  |Feature|Status|
  |:---|---:|
  |Base CSS with CSS custom properties|Ready|
