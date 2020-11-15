@@ -1,4 +1,4 @@
-Note: If you are looking for the website source code, it is in the [gh-pages](https://github.com/nikhilmwarrier/fluidcss/tree/gh-pages/) branch.
+Note: If you are looking for the website source code, it is in the [gh-pages](https://github.com/nikhilmwarrier/fluidcss/blob/gh-pages/) branch.
 
 Jump to:
 
