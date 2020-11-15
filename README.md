@@ -5,12 +5,14 @@ Jump to:
 - [Project Roadmap](https://github.com/nikhilmwarrier/fluidcss/blob/main/README.md#project-roadmap)
 - [Contribution Guidelines](https://github.com/nikhilmwarrier/fluidcss/blob/main/README.md#contribution-guidelines)
 
-# FluidCSS
+# FluidCSS 
 ![FluidCSS_banner](https://github.com/nikhilmwarrier/fluidcss/blob/gh-pages/res/fluidcss%20-%20banner.png)
 
 A minimal, hackable css library with responsive design in mind.
 
 ### Project Roadmap
+
+[After all the additons listed below are marke ready, FluidCSS will enter v0.5 (beta)]
 
  > Note: `*` implies that that particular feature requires JS
 
@@ -42,7 +44,9 @@ A minimal, hackable css library with responsive design in mind.
  
  ### Contribution Guidelines
  - Start by forking this repo
- - Only make changes that are absolutely required, and explain those
+ - Check the [Project Roadmap](https://github.com/nikhilmwarrier/fluidcss/blob/main/README.md#project-roadmap) for features that have to be implemented
+ - If you want to add a new feature, create a separate stylesheet with only the feature you want and save it as `feature-name.css` instead of adding it to the main `fluid.css`. If your PR is accepted, it will be merged with the main stylesheet. This makes it easy to manage the project.
+ - Only make changes that are absolutely required in the main stylesheet, and explain those _clearly_.
  - Ensure browser support from atleast MS Edge 16 or above.
  - **Submit a working [Codepen sample](http://codepen.io) for the features or fixes highlighted in your PR, not just a screenshot**
  - Make sure your PR is descriptive, but don't make it longer than four paragraphs.
@@ -62,3 +66,4 @@ We are looking forward to your contributions!
 ***
 Contributions wholehartedly welcome!
 ***
+
