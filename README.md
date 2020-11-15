@@ -1,7 +1,5 @@
 Note: If you are looking for the website source code, it is in the [gh-pages](https://github.com/nikhilmwarrier/fluidcss/tree/gh-pages/) branch.
 
-Jump to:
-
 - [Project Roadmap](https://github.com/nikhilmwarrier/fluidcss/blob/main/README.md#project-roadmap)
 - [Contribution Guidelines](https://github.com/nikhilmwarrier/fluidcss/blob/main/README.md#contribution-guidelines)
 
@@ -12,7 +10,7 @@ A minimal, hackable css library with responsive design in mind.
 
 ### Project Roadmap
 
-[After all the additons listed below are marke ready, FluidCSS will enter v0.5 (beta)]
+[After all the additons listed below are marked ready, FluidCSS will enter v0.5 (beta)]
 
  > Note: `*` implies that that particular feature requires JS
 
@@ -61,8 +59,9 @@ We are looking forward to your contributions!
  |:---|:---|
  |`main` | The active development stream.
  |`gh-pages`| Used for [FluidCSS official site](https://nikhilmwarrier.github.io/fluidcss) 
+
 ***
-[Visit the site for more info](https://nikhilmwarrier.github.io/fluidcss)
+[Visit the official FluidCSS site](https://nikhilmwarrier.github.io/fluidcss)
 ***
 Contributions wholehartedly welcome!
 ***
