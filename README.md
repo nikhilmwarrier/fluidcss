@@ -12,7 +12,7 @@ A minimal, hackable css library with responsive design in mind.
 
 ### Project Roadmap
 
- > Note: `*` implies that that particular feature require JS
+ > Note: `*` implies that that particular feature requires JS
 
  |Feature|Status|
  |:---|---:|
@@ -37,7 +37,6 @@ A minimal, hackable css library with responsive design in mind.
  |Fulscreen templates using `<section>`|Pending|
  |Page Preloader Animation*|Pending|
  |CSS variable for `border-radius` property|Pending|
- |__Include SCSS and BEM__|__Help Needed__|
  |__Splitting and Componentializing CSS__|__Under Consideration__|
  
  
