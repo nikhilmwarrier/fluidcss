@@ -26,8 +26,8 @@ A minimal, hackable css library with responsive design in mind.
  |`<aside>` element for fixed sidebar|Ready|
  |Documentation base template|Ready|
  |Custom Scrollbar|Ready|
- |__Documentation for the project__|__Important__|
- |__`<code>` element customization__|__Important__|
+ |Documentation for the project|Pending|
+ |`<code>` element customization__|Ready|
  |Checkboxes| Pending|
  |Radio Buttons|Pending|
  |`<form>` and `<input>`*|Pending|
@@ -37,7 +37,6 @@ A minimal, hackable css library with responsive design in mind.
  |Fulscreen templates using `<section>`|Pending|
  |Page Preloader Animation*|Pending|
  |CSS variable for `border-radius` property|Pending|
- |__Splitting and Componentializing CSS__|__Under Consideration__|
  
  
  ### Contribution Guidelines
