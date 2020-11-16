@@ -26,7 +26,7 @@ A minimal, hackable css library with responsive design in mind.
  |`<aside>` element for fixed sidebar|Ready|
  |Documentation base template|Ready|
  |Custom Scrollbar|Ready|
- |Documentation for the project|Pending|
+ |Documentation for the project|Under Progress|
  |`<code>` element customization__|Ready|
  |Checkboxes| Pending|
  |Radio Buttons|Pending|
