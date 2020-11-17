@@ -195,6 +195,11 @@ blockquote {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.fl-embed {
+  max-width: 100px;
+  transform: translateY(20px);
+}
+
 ul {
   list-style-type: square;
 }
@@ -282,6 +287,7 @@ code {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   border-radius: 5px;
+  line-height: 1.5rem;
 }
 
 pre.code {
@@ -312,20 +318,47 @@ pre.code::selection {
   color: var(--code-color);
 }
 
+pre.code .line-number {
+  display: block;
+}
+
+pre.code .line-number {
+  float: left;
+  margin: 0 1em 0 -1em;
+  border-right: 1px solid;
+  text-align: right;
+  line-height: 1.5rem; /*Should be same as line height for <code element>*/
+  opacity: 0.3;
+  user-select: none;
+}
+
+pre.code .line-number span {
+  display: block;
+  padding: 0 0.5em 0 1em;
+}
+
+pre.code .cl {
+  display: block;
+  clear: both;
+}
+
 /*Custom Scrollbar for WEbkit browsers*/
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: var(--border-color);
+  border-radius: 0 0 5px 5px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--accent-color);
+  border-radius: 0 0 5px 5px;
 }
 
 /* Handle on hover */
