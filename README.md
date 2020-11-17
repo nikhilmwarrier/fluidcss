@@ -4,7 +4,7 @@ Note: If you are looking for the website source code, it is in the [gh-pages](ht
 - [Contribution Guidelines](#contribution-guidelines)
 
 # FluidCSS 
-![FluidCSS_banner](https://github.com/nikhilmwarrier/fluidcss/blob/gh-pages/res/fluidcss%20-%20banner.png)
+![FluidCSS_banner](https://github.com/nikhilmwarrier/fluidcss/blob/master/docs/res/fluidcss%20-%20banner.png)
 
 A minimal, hackable css library with responsive design in mind.
 
@@ -34,7 +34,7 @@ A minimal, hackable css library with responsive design in mind.
  |Modal*|Pending|
  |Dark Mode with `localStorage()` API*|Pending|
  |Sharing using `navigator.share` API*|Pending|
- |Fulscreen templates using `<section>`|Pending|
+ |Fulscreen templates using `<section>`|Ready|
  |Page Preloader Animation*|Pending|
  |CSS variable for `border-radius` property|Pending|
  
@@ -52,12 +52,6 @@ A minimal, hackable css library with responsive design in mind.
  - Last but not the least, **compare your PR with the latest commit in the actual FluidCSS repo and make additional changes (if required) before actually submitting the PR.**
  
 We are looking forward to your contributions!
- 
- Current Branches:
- |Branch|Details|
- |:---|:---|
- |`main` | The active development stream.
- |`gh-pages`| Used for [FluidCSS official site](https://nikhilmwarrier.github.io/fluidcss) 
 
 ***
 [Visit the official FluidCSS site](https://nikhilmwarrier.github.io/fluidcss)
