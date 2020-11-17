@@ -160,7 +160,7 @@ blockquote {
 .highlight {
   background-color: var(--accent-color);
   color: var(--accent-text);
-  padding: 0.5rem;
+  padding: 0.4rem;
   border-radius: 5px;
 }
 
