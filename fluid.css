@@ -122,11 +122,18 @@ section {
   background-color: #fff;
   border: 3px solid var(--accent-text);
   color: var(--accent-color);
+  margin: 10px;
 }
 
 .hero-container .btn.btn-secondary {
   color: var(--accent-text);
   border: 3px solid var(--accent-text);
+}
+
+.hero-container .hero-cta {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap-reverse;
 }
 
 footer {
