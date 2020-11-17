@@ -34,10 +34,15 @@
    options: fixed or absolute;
    */
 
-  --background-blur: 10px;
+  --background-blur: 5px;
   --aside-width: 200px;
 
+  --actual-viewport-width: calc(100vw - var(--default-scrollbar-width));
+
   font-size: 15px;
+
+  /*!Don't dare to touch the following variables, it will break stuff!*/
+  --default-scrollbar-width: 0px;
 }
 
 * {
@@ -51,14 +56,18 @@ html {
 body {
   padding: 0;
   margin: 0;
+  width: 100vw;
+  width: var(--actual-viewport-width);
   max-width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   font-family: var(--sans-serif-font);
   font-size: 1rem;
   color: var(--text-color);
   scrollbar-color: var(--accent-color) var(--border-color);
   scrollbar-width: normal;
   display: inline-block;
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
 }
 
 .container {
@@ -68,13 +77,66 @@ body {
   max-width: 100vw;
 }
 
+section {
+  height: 100vh;
+}
+
+@media screen and(max-width: 768px) {
+  :root {
+    --actual-viewport-width: 100vw;
+  }
+}
+
+.hero-section {
+  background: linear-gradient(var(--accent-color), var(--accent-lighter));
+  background: var(--accent-color)
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/city.jpg) no-repeat
+    center / cover;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: luminosity;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  background-color: var(--accent-semitransparent);
+  backdrop-filter: blur(var(--background-blur));
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.hero-container p {
+  color: var(--accent-text);
+  font-size: 1.5rem;
+}
+
+.hero-container h1 {
+  color: var(--accent-text);
+  font-size: 3rem;
+}
+
+.hero-container .btn {
+  background-color: #fff;
+  border: 3px solid var(--accent-text);
+  color: var(--accent-color);
+}
+
+.hero-container .btn.btn-secondary {
+  color: var(--accent-text);
+  border: 3px solid var(--accent-text);
+}
+
 footer {
   min-height: var(--navbar-height);
   background-color: var(--border-color);
   width: 100vw;
+  width: var(--actual-viewport-width);
   color: var(--text-color);
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 footer p {
@@ -120,6 +182,10 @@ blockquote {
 }
 .monospace {
   font-family: var(--monospace-font);
+}
+
+.semitransparent {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 ul {
@@ -239,7 +305,7 @@ pre.code::selection {
   color: var(--code-color);
 }
 
-/*Custom Scrollbar*/
+/*Custom Scrollbar for WEbkit browsers*/
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
