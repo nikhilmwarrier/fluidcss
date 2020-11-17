@@ -23,6 +23,10 @@
   --sans-serif-font: "Ubuntu", sans-serif; /*Sans-serif*/
   --code-font: "Fira Code", monospace; /*Monospace*/
 
+  --code-color: rgb(86, 185, 252);
+  --code-bgcolor: rgb(31, 31, 31);
+  --code-label-color: rgb(255, 117, 117);
+
   --navbar-text-color: rgb(255, 255, 255);
   --navbar-height: 70px;
   --navbar-type: fixed;
@@ -50,15 +54,16 @@ body {
   max-width: 100vw;
   height: 100vh;
   font-family: var(--sans-serif-font);
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--text-color);
   scrollbar-color: var(--accent-color) var(--border-color);
   scrollbar-width: normal;
+  display: inline-block;
 }
 
 .container {
   margin-top: calc(var(--navbar-height) + 1.2rem);
-  margin-left: auto;
+  margin-left: calc(var(--aside-width) + 20px);
   margin-right: auto;
   max-width: 100vw;
 }
@@ -66,7 +71,7 @@ body {
 footer {
   min-height: var(--navbar-height);
   background-color: var(--border-color);
-  width: 100%;
+  width: 100vw;
   color: var(--text-color);
   margin: 0;
   padding: 0;
@@ -74,6 +79,20 @@ footer {
 
 footer p {
   color: var(--text-color);
+  font-size: 1rem;
+}
+
+blockquote {
+  border-left: 4px solid var(--accent-color);
+  padding-left: 1rem;
+  margin-left: 5px;
+}
+
+.highlight {
+  background-color: var(--accent-color);
+  color: var(--accent-text);
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 
 .hidden {
@@ -92,6 +111,19 @@ footer p {
 }
 .left-align {
   text-align: left;
+}
+.serif {
+  font-family: var(--serif-font);
+}
+.sans-serif {
+  font-family: var(--sans-serif-font);
+}
+.monospace {
+  font-family: var(--monospace-font);
+}
+
+ul {
+  list-style-type: square;
 }
 
 p {
@@ -159,7 +191,9 @@ hr {
   width: 60%;
   border: none;
   background-color: var(--border-color);
-  height: 1px;
+  height: 3px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 ::selection {
@@ -167,6 +201,43 @@ hr {
   color: var(--accent-text);
 }
 
+code {
+  overflow: auto;
+  background-color: var(--code-bgcolor);
+  color: var(--code-color);
+  font-family: var(--code-font);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 5px;
+}
+
+pre.code {
+  width: 80%;
+  background-color: var(--code-bgcolor);
+  color: var(--code-color);
+  padding: 10px;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: --code;
+  border-radius: 5px;
+}
+
+pre.code[data-lang]::before {
+  content: attr(data-lang);
+  display: block;
+  font-family: var(--code-font);
+  color: var(--code-label-color);
+  text-align: left;
+  font-size: 1rem;
+  user-select: none;
+}
+
+code::selection,
+pre.code::selection {
+  background-color: rgba(102, 102, 102, 0.5);
+  color: var(--code-color);
+}
 
 /*Custom Scrollbar*/
 /* width */
@@ -397,4 +468,22 @@ aside ul > a {
 .switch-input:checked + .switch-label::after {
   left: 28px;
 }
-/*line 400*/
+
+/*For resizeable CodePen Embeds*/
+.cp_embed_wrapper {
+  /* required for resize to work */
+  overflow: hidden;
+
+  /* make resizeble! */
+  resize: both;
+
+  /* required to see the handle */
+  background: #333333;
+  padding-bottom: 10px;
+
+  /* default height */
+  height: 400px;
+}
+.cp_embed_wrapper iframe {
+  height: 100% !important;
+}

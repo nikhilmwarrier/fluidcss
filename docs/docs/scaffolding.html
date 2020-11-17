@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../res/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../fluid.css" />
+    <script src="../fluid.js" defer></script>
+    <title>FluidCSS</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="../res/logo.png" alt="" media="max-width: 767px" />
+      </div>
+      <div class="links">
+        <a href="../">Home</a>
+        <a href="https://github.com/nikhilmwarrier/fluidcss">Download</a>
+
+        <a href="#" id="expand-nav" onclick="openNav()" class="material-icons"
+          >expand_more</a
+        >
+        <a href="#" id="contr-nav" onclick="closeNav()" class="material-icons"
+          >expand_less</a
+        >
+      </div>
+    </nav>
+    <div class="sidenav" id="sidenav">
+      <a href="../blog/about">About</a>
+      <a href="../">Developer</a>
+      <a href="mailto:champion.26nikhil@gmail.com">Contact</a>
+    </div>
+    <aside>
+      <p>FluidCSS Documentataion</p>
+      <ul>
+        <a href="index.html">Getting Started</a>
+      </ul>
+      <ul>
+        <a href="scaffolding.html" class="highlight">Scaffolding</a>
+      </ul>
+      <ul>
+        <a href="typography.html">Typography</a>
+      </ul>
+      <ul>
+        <a href="#">Chapter 3</a>
+      </ul>
+      <ul>
+        <a href="#">Chapter 4</a>
+      </ul>
+      <ul>
+        <a href="#">Chapter 5</a>
+      </ul>
+    </aside>
+    <div class="container">
+      <h1>Scaffolding</h1>
+      <h2>Layout System:</h2>
+      <p>
+        One of the key aspects of FluidCSS is that it has but a very small
+        learning curve. It also removes the need of learning a gazillion class
+        names just to position something. <br />
+        <br />
+        FluidCSS has a very simple layout system. Just add three html tags to
+        your <code>body</code> tag and, <em>voila</em>, the layout that took
+        ages to make is ready!
+      </p>
+      <h2>The FluidCSS three-tag layout:</h3>
+        <p>FluidCSS layout system is very simple. It comprises of a fixed sidebar, or <code>&lt;aside&gt;</code> element, a navbar at the top, created with the <code>&lt;nav&gt;</code> element, and the main <code>&lt;div class="container"&gt;</code>, which is where your contemnt lies.</p>
+      <p
+        class="codepen"
+        data-height="482"
+        data-theme-id="dark"
+        data-default-tab="result"
+        data-user="nikhilmwarrier"
+        data-slug-hash="YzWgpqq"
+        style="
+          height: 500px;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid;
+          margin: 1em 0;
+          padding: 1em;
+        "
+        data-pen-title="FluidCSS in three tags"
+      >
+        <span
+          >See the Pen
+          <a href="https://codepen.io/nikhilmwarrier/pen/YzWgpqq">
+            FluidCSS in three tags</a
+          >
+          by Nikhil M Warrier (<a href="https://codepen.io/nikhilmwarrier"
+            >@nikhilmwarrier</a
+          >) on <a href="https://codepen.io">CodePen</a>.</span
+        >
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+        <hr>
+      <h2>Responsive Design</h3>
+      <p>
+        Here is an example of a simple page. Try resizing it. The
+        <code>&lt;aside&gt;</code> element moves to the top in smaller devices.
+      </p>
+      <p
+        class="codepen"
+        data-height="527"
+        data-theme-id="dark"
+        data-default-tab="result"
+        data-user="nikhilmwarrier"
+        data-slug-hash="KKMEgrZ"
+        style="
+          height: 527px;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid;
+          margin: 1em 0;
+          padding: 1em;
+        "
+        data-pen-title="Resizeable FluidCSS template"
+      >
+        <span
+          >See the Pen
+          <a href="https://codepen.io/nikhilmwarrier/pen/KKMEgrZ">
+            Resizeable FluidCSS template</a
+          >
+          by Nikhil M Warrier (<a href="https://codepen.io/nikhilmwarrier"
+            >@nikhilmwarrier</a
+          >) on <a href="https://codepen.io">CodePen</a>.</span
+        >
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </body>
+</html>
