@@ -4,7 +4,7 @@ Note: If you are looking for the website source code, it is in the [gh-pages](ht
 - [Contribution Guidelines](#contribution-guidelines)
 
 # FluidCSS 
-![FluidCSS_banner](https://github.com/nikhilmwarrier/fluidcss/blob/main/docs/res/fluidcss%20-%20banner.png?raw=true)
+![FluidCSS_banner](https://raw.githubusercontent.com/nikhilmwarrier/fluidcss/main/docs/res/FluidCSS-banner.png)
 
 A minimal, hackable css library with responsive design in mind.
 
