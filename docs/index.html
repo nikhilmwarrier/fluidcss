@@ -39,7 +39,7 @@
 <ul><a href="#" class="highlight">Quick Start</a></ul>
 <ul><a href="scaffolding.html">Scaffolding</a></ul>
 <ul><a href="typography.html">Typography</a></ul>
-<ul><a href="#">Chapter 3</a></ul>
+<ul><a href="input.html">Inputs</a></ul>
 <ul><a href="#">Chapter 4</a></ul>
 <ul><a href="#">Chapter 5</a></ul>
 
@@ -50,12 +50,9 @@
         <p>
         Add this code to your <code>&lt;head&gt;</code> tag to get started right now using CDN.
         <pre class="code" data-lang="HTML5">
-          <code>
-    &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/&gt;
-    &lt;link rel="stylesheet" href="https://nikhilmwarrier.github.io/fluidcss/fluid.css" /&gt;
-    &lt;script src="https://nikhilmwarrier.github.io/fluidcss/fluid.js" defer&gt;&lt;/script&gt;
-  </code>
-        </pre>
+<code> &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/&gt;
+  &lt;link rel="stylesheet" href="https://nikhilmwarrier.github.io/fluidcss/fluid.css" /&gt;
+  &lt;script src="https://nikhilmwarrier.github.io/fluidcss/fluid.js" defer&gt;&lt;/script&gt;</code></pre>
         </p>
         <hr />
         
@@ -64,53 +61,47 @@
         Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
       </p>
       <pre class="code" data-lang="HTML5">
-        <code>
-        &lt;!DOCTYPE html&gt;
+<code>&lt;!DOCTYPE html&gt;
 
-        &lt;html&gt;
+  &lt;html&gt;
 
-          &lt;head&gt;
+    &lt;head&gt;
 
-            &lt;!--Required meta tags--&gt;  
-            &lt;meta charset="UTF-8"&gt;
-            &lt;meta name="viewport"
-            content="width=device-width,
-              initial-scale=1.0"&gt;
+      &lt;!--Required meta tags--&gt;  
+      &lt;meta charset="UTF-8"&gt;
+      &lt;meta name="viewport"
+      content="width=device-width,
+        initial-scale=1.0"&gt;
 
-              &lt;!--Google's Material Icons [Optional, but highly recommended]--&gt;
-              &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
-              /&gt;
+        &lt;!--Google's Material Icons [Optional, but highly recommended]--&gt;
+        &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
+        /&gt;
 
-              &lt;!--FluidCSS Stylesheet--&gt;
-              &lt;link rel="stylesheet" href="https://nikhilmwarrier.github.io/fluidcss/fluid.css" /&gt;
+        &lt;!--FluidCSS Stylesheet--&gt;
+        &lt;link rel="stylesheet" href="https://nikhilmwarrier.github.io/fluidcss/fluid.css" /&gt;
 
-              &lt;!--FluidCSS JavaScript--&gt;
-              &lt;script src="https://nikhilmwarrier.github.io/fluidcss/fluid.js" defer&gt;&lt;/script&gt;
+        &lt;!--FluidCSS JavaScript--&gt;
+        &lt;script src="https://nikhilmwarrier.github.io/fluidcss/fluid.js" defer&gt;&lt;/script&gt;
 
-            &lt;title&gt; FluidCSS Template &lt;/title&gt;
-          &lt;/head&gt;
+      &lt;title&gt; FluidCSS Template &lt;/title&gt;
+    &lt;/head&gt;
 
 
-          &lt;body&gt;
-            &lt;div class="container"&gt;
-              &lt;h1&gt;Hello World!&lt;/h1&gt;
-            &lt;/div&gt;
-          &lt;/body&gt;
+    &lt;body&gt;
+      &lt;div class="container"&gt;
+        &lt;h1&gt;Hello World!&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/body&gt;
 
-        &lt;/html&gt;
-      </code>
-      </pre>
+  &lt;/html&gt;</code></pre>
       <h2>A word on box-sizing</h2>
       <p>
       For more straightforward and digestible sizing, we use <code>box-sizing: border-box</code> on all elements. If you want to override this on some very specific cases, just add something like this to your css rules:
     </p>
       <pre class="code" data-lang="CSS">
-        <code>
-          some-element{
-            box-sizing: content-box
-          }
-        </code>
-      </pre>
+<code>some-element{
+  box-sizing: content-box
+}</code> </pre>
     </div>
     
   </body>

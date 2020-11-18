@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../res/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../fluid.css" />
+    <script src="../fluid.js" defer></script>
+    <title>FluidCSS</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="res/logo.png" alt="" media="max-width: 767px" />
+      </div>
+      <div class="links">
+        <a href="../">Home</a>
+        <a href="https://github.com/nikhilmwarrier/fluidcss">Download</a>
+
+        <a href="#" id="expand-nav" onclick="openNav()" class="material-icons"
+          >expand_more</a
+        >
+        <a href="#" id="contr-nav" onclick="closeNav()" class="material-icons"
+          >expand_less</a
+        >
+      </div>
+    </nav>
+    <div class="sidenav" id="sidenav">
+      <a href="../../blog/about">About</a>
+      <a href="../../">Developer</a>
+      <a href="mailto:champion.26nikhil@gmail.com">Contact</a>
+    </div>
+    <aside>
+      <p>FluidCSS Documentataion</p>
+      <ul>
+        <a href="index.html">Getting Started</a>
+      </ul>
+      <ul>
+        <a href="scaffolding.html">Scaffolding</a>
+      </ul>
+      <ul>
+        <a href="typography.html">Typography</a>
+      </ul>
+      <ul>
+        <a class="highlight" href="input.html">Inputs</a>
+      </ul>
+      <ul>
+        <a href="#">Chapter 4</a>
+      </ul>
+      <ul>
+        <a href="#">Chapter 5</a>
+      </ul>
+    </aside>
+    <div class="container">
+      <h1 >User Inputs</h1>
+      <h2>Buttons</h2>
+      <p>
+        Usage: <br>
+        <pre class="code" data-lang="HTML5">
+<code> &lt;button class="btn"&gt; <span class="comment">//for primary button.</span>
+  &lt;button class="btn btn-secondary"&gt; <span class="comment">//for secondary button. </span>
+  &lt;button class="btn" disabled&gt; for disabled button. 
+  &lt;button class="btn btn-secondary" disabled&gt; <span class="comment">//for disabled secondary button.</span>
+  &lt;button class="btn btn-block"&gt; <span class="comment">//for primary block-level (ie. 80% width) button. </span>
+  &lt;button class="btn btn-block btn-secondary"&gt; <span class="comment">//for secondary block-level button.</span> </code>
+        </pre>
+        <button class="btn">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <br>
+        <button class="btn" disabled>Disabled-Primary</button>
+        <button class="btn btn-secondary" disabled>Disabled-Secondary</button>
+
+        <br>
+        <button class="btn btn-block">Primary Block-level</button>
+        <button class="btn btn-block btn-secondary">Secondary Block-level</button>
+      </p>
+      <h2>Checkboxes</h2>
+      <p>
+        What do you like?<br><br>
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox-input" />
+          <span class="checkbox-box"></span>
+          Pizza
+        </label>
+        <br><br>
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox-input" />
+          <span class="checkbox-box"></span>
+          Pasta
+        </label>
+        <br><br>
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox-input" />
+          <span class="checkbox-box"></span>
+          Noodles
+        </label>
+        <br><br>
+        <label class="checkbox disabled">
+          <input type="checkbox" class="checkbox-input" disabled />
+          <span class="checkbox-box"></span>
+          Useless code [No one likes useless code]
+        </label>
+      </p>
+    </p>
+    <h2>Radio Buttons</h2>
+    <p>
+        Rate FluidCSS
+        <br><br>
+        <label class="radio">
+            <input type="radio" name="radio" class="radio-input" />
+            <span class="radio-radio"></span>
+            5 stars
+        </label>
+        <br><br>
+
+        <label class="radio">
+          <input type="radio" name="radio" class="radio-input" />
+          <span class="radio-radio"></span>
+          4 stars 
+        </label>    
+
+          <br><br>
+
+        <label class="radio disabled">
+          <input type="radio" name="radio" class="radio-input" disabled />
+          <span class="radio-radio"></span>
+          3 stars [Rate a minimum of four stars]
+        </label>
+        <br><br>
+        <label class="radio disabled">
+          <input type="radio" name="radio" class="radio-input" disabled />
+          <span class="radio-radio"></span>
+          2 stars
+        </label>
+        <br><br>
+        <label class="radio disabled">
+          <input type="radio" name="radio" class="radio-input" disabled />
+          <span class="radio-radio"></span>
+          1 star
+        </label>
+    </p>
+    <h2>Text Input</h2>
+    <p>
+      <input type="text" placeholder="Name" class="text-input" />
+      <input type="email" placeholder="Email" class="text-input" />
+      <input type="password" placeholder="Password" class="text-input"><br><br>
+      <button class="btn btn-block">Submit</button>
+    </p>
+    </div>
+  </body>
+</html>
