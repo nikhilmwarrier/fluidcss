@@ -3,6 +3,8 @@ var expandNav = document.querySelector("#expand-nav");
 var contrNav = document.querySelector("#contr-nav");
 var root = document.documentElement;
 var body = document.body;
+var preloaderOverlay = document.getElementById("preloader-overlay");
+var preloader = document.getElementById("preloader");
 
 function openNav() {
   sidenav.style.height = "100%";

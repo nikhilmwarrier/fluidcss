@@ -59,7 +59,7 @@
         <a class="highlight" href="input.html">Inputs</a>
       </ul>
       <ul>
-        <a href="#">Chapter 4</a>
+        <a href="modal.html">Modal</a>
       </ul>
       <ul>
         <a href="#">Chapter 5</a>
@@ -69,7 +69,7 @@
       <h1 >User Inputs</h1>
       <h2>Buttons</h2>
       <p>
-        Usage: <br>
+        Usage: <br></p>
         <pre class="code" data-lang="HTML5">
 <code> &lt;button class="btn"&gt; <span class="comment">//for primary button.</span>
   &lt;button class="btn btn-secondary"&gt; <span class="comment">//for secondary button. </span>
@@ -78,12 +78,12 @@
   &lt;button class="btn btn-block"&gt; <span class="comment">//for primary block-level (ie. 80% width) button. </span>
   &lt;button class="btn btn-block btn-secondary"&gt; <span class="comment">//for secondary block-level button.</span> </code>
         </pre>
+<p>
         <button class="btn">Primary</button>
         <button class="btn btn-secondary">Secondary</button>
         <br>
         <button class="btn" disabled>Disabled-Primary</button>
         <button class="btn btn-secondary" disabled>Disabled-Secondary</button>
-
         <br>
         <button class="btn btn-block">Primary Block-level</button>
         <button class="btn btn-block btn-secondary">Secondary Block-level</button>
@@ -157,9 +157,38 @@
     <p>
       <input type="text" placeholder="Name" class="text-input" />
       <input type="email" placeholder="Email" class="text-input" />
+      <input type="text" placeholder="Disabled" class="text-input disabled" disabled />
       <input type="password" placeholder="Password" class="text-input"><br><br>
       <button class="btn btn-block">Submit</button>
     </p>
+    <h2>Toggle Switches</h2>
+      <p>
+      <label class="toggle">
+        <input type="checkbox" class="toggle-input" />
+        <span class="toggle-switch"></span>
+        Toggle Switch
+      </label>
+      <br><br>
+      <label class="toggle">
+        <input type="checkbox" class="toggle-input" checked />
+        <span class="toggle-switch"></span>
+        Checked
+      </label>
+      <br><br>
+      <label class="toggle disabled">
+        <input type="checkbox" class="toggle-input" disabled />
+        <span class="toggle-switch"></span>
+        Disabled
+      </label>
+      <br><br>
+      <label class="toggle disabled">
+        <input type="checkbox" class="toggle-input" checked disabled />
+        <span class="toggle-switch"></span>
+        Checked Disabled
+      </label>
+    </p>
+
+
     </div>
   </body>
 </html>
