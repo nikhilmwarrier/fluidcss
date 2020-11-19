@@ -28,8 +28,8 @@ A minimal, hackable css library with responsive design in mind.
  |Custom Scrollbar|Ready|
  |Documentation for the project|Under Progress|
  |`<code>` element customization__|Ready|
- |Checkboxes| Pending|
- |Radio Buttons|Pending|
+ |Checkboxes| Ready|
+ |Radio Buttons|Ready|
  |`<form>` and `<input>`*|Pending|
  |Modal*|Pending|
  |Dark Mode with `localStorage()` API*|Pending|
