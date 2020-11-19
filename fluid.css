@@ -146,7 +146,7 @@ section {
 .hero-section {
   background: linear-gradient(var(--accent-color), var(--accent-lighter));
   background: var(--accent-color)
-    url(https://s3.amazonaws.com/s.cdpn.io/162656/city.jpg) no-repeat center /
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/city.jpg) no-repeat center /
     cover;
   background-attachment: fixed;
   background-size: cover;
