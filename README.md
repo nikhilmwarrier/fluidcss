@@ -17,7 +17,7 @@ A minimal, hackable css library with responsive design in mind.
  |Feature|Status|
  |:---|---:|
  |Base CSS with CSS custom properties|Ready|
- |toggle switches|Ready|
+ |Toggle switches|Ready|
  |Primary and Secondary buttons|Ready|
  |Navbar|Ready|
  |Dropdown Navigation*|Ready|
@@ -27,16 +27,17 @@ A minimal, hackable css library with responsive design in mind.
  |Documentation base template|Ready|
  |Custom Scrollbar|Ready|
  |Documentation for the project|Under Progress|
- |`<code>` element customization__|Ready|
+ |`<code>` element customization|Ready|
  |Checkboxes| Ready|
  |Radio Buttons|Ready|
- |`<form>` and `<input>`*|Pending|
- |Modal*|Pending|
+ |Pure CSS Tooltips|Ready|
+ |`<form>` and `<input>`*|Under Progress|
+ |Pure CSS Modal|Ready|
  |Dark Mode with `localStorage()` API*|Pending|
  |Sharing using `navigator.share` API*|Pending|
  |Fulscreen templates using `<section>`|Ready|
  |Page Preloader Animation*|Pending|
- |CSS variable for `border-radius` property|Pending|
+ |CSS variable for `border-radius` property|Ready|
  
  
  ### Contribution Guidelines
