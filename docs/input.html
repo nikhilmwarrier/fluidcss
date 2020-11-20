@@ -59,7 +59,7 @@
         <a class="highlight" href="input.html">Inputs</a>
       </ul>
       <ul>
-        <a href="modal.html">Modal</a>
+        <a href="components.html">Components</a>
       </ul>
       <ul>
         <a href="#">Chapter 5</a>
@@ -70,11 +70,21 @@
       <h2>Buttons</h2>
       <p>
         Usage: <br></p>
-        <pre class="code" data-lang="HTML5">
+        <pre class="code" data-lang="Buttons - HTML5">
 <code> &lt;button class="btn"&gt; <span class="comment">//for primary button.</span>
   &lt;button class="btn btn-secondary"&gt; <span class="comment">//for secondary button. </span>
-  &lt;button class="btn" disabled&gt; for disabled button. 
+  &lt;button class="btn" disabled&gt;  <span class="comment">//for disabled button</span> 
   &lt;button class="btn btn-secondary" disabled&gt; <span class="comment">//for disabled secondary button.</span>
+
+  <span class="comment">//Pill Buttons</span>
+  &lt;button class="btn btn-pill">Pill Button&lt;/button>
+  &lt;button class="btn btn-pill btn-secondary"> Secondary Pill Button&lt;/button>
+
+  <span class="comment">//Primary-colored Buttons</span>
+  &lt;button class="btn btn-red">Red Button&lt;/button>       
+  &lt;button class="btn btn-green"> Green Button&lt;/button>
+  &lt;button class="btn btn-blue"> Blue Button&lt;/button>
+
   &lt;button class="btn btn-block"&gt; <span class="comment">//for primary block-level (ie. 80% width) button. </span>
   &lt;button class="btn btn-block btn-secondary"&gt; <span class="comment">//for secondary block-level button.</span> </code>
         </pre>
@@ -85,10 +95,24 @@
         <button class="btn" disabled>Disabled-Primary</button>
         <button class="btn btn-secondary" disabled>Disabled-Secondary</button>
         <br>
+        <button class="btn btn-pill">Pill Button</button>
+        <button class="btn btn-pill btn-secondary"> Secondary Pill Button</button>
+        <br>
+        <button class="btn btn-red">Red Button</button>
+        <button class="btn btn-green"> Green Button</button>
+        <button class="btn btn-blue"> Blue Button</button>
+        <br>
         <button class="btn btn-block">Primary Block-level</button>
         <button class="btn btn-block btn-secondary">Secondary Block-level</button>
       </p>
       <h2>Checkboxes</h2>
+      <pre class="code" data-lang="Checkboxes - HTML5"><code>
+ &lt;label class="checkbox">                           <span class="comment">&lt;-- Create a label with a class of 'checkbox'</span>
+   &lt;input type="checkbox" class="checkbox-input" /> <span class="comment">&lt;-- The actual checkbox, which is hidden</span>
+   &lt;span class="checkbox-box">&lt;/span>               <span class="comment">&lt;-- The custom styled 'checkbox'</span>
+   Pizza                                            <span class="comment">&lt;-- Here, you can label your checkbox</span>
+ &lt;/label>
+      </code></pre>
       <p>
         What do you like?<br><br>
         <label class="checkbox">
@@ -117,6 +141,13 @@
       </p>
     </p>
     <h2>Radio Buttons</h2>
+<pre class="code" data-lang="Radio Buttons - HTML5"><code>
+&lt;label class="radio">                           <span class="comment">&lt;-- Create a label with a class of 'radio'</span>
+  &lt;input type="input" class="radio-input" />    <span class="comment">&lt;-- The actual radio input, which is hidden</span>
+  &lt;span class="radio-radio">&lt;/span>             <span class="comment">&lt;-- The custom styled 'radio'</span>
+  5 stars                                       <span class="comment">&lt;-- Here, you can label your radio</span>
+&lt;/label>
+</code></pre>
     <p>
         Rate FluidCSS
         <br><br>
@@ -156,6 +187,9 @@
     <h2>Text Input</h2>
     <p>
       <input type="text" placeholder="Name" class="text-input" />
+      <input type="text" placeholder="Success" class="text-input success" />
+      <input type="text" placeholder="Info" class="text-input info" />
+      <input type="text" placeholder="Error" class="text-input error" />
       <input type="email" placeholder="Email" class="text-input" />
       <input type="text" placeholder="Disabled" class="text-input disabled" disabled />
       <input type="password" placeholder="Password" class="text-input"><br><br>
