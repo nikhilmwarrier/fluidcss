@@ -1,25 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fira+Code:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto::ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 :root {
   /*Customize*/
   --body-bgcolor: rgb();
-  --accent-color: rgb(163, 73, 164);
-  --accent-semitransparent: rgba(163, 73, 164, 0.7);
-  --accent-light: rgb(184, 82, 185);
+  --footer-bgcolor: rgb(231, 231, 231);
+  --accent-color: rgb(195, 0, 255);
+  --accent-semitransparent: rgba(195, 0, 255, 0.7);
+  --accent-almost-transparent: rgba(195, 0, 255, 0.1);
+  --accent-light: rgb(204, 65, 247);
   --accent-lighter: rgb(216, 99, 218);
-  --accent-dark: rgb(138, 70, 138);
-  --accent-darker: rgb(73, 35, 73);
+  --accent-dark: rgb(150, 0, 196);
+  --accent-darker: rgb(89, 0, 116);
 
-  --shade-red: rgb(223, 1, 1);
-  --shade-red-dark: rgb(189, 15, 15);
+  --shade-red: rgb(255, 57, 57);
+  --shade-red-dark: rgb(224, 0, 0);
 
-  --shade-green: rgb(0, 207, 0);
-  --shade-green-dark: rgb(0, 182, 0);
+  --shade-green: rgb(0, 211, 0);
+  --shade-green-dark: rgb(0, 184, 0);
 
-  --shade-blue: rgb(70, 70, 255);
-  --shade-blue-dark: rgb(0, 0, 165);
+  --shade-blue: rgb(64, 182, 250);
+  --shade-blue-dark: rgb(0, 151, 211);
 
   --border-color: rgb(212, 212, 212);
   --border-radius: 5px;
@@ -28,10 +31,12 @@
   --link-color: rgb(0, 116, 170);
   --link-hover-color: rgb(2, 83, 83);
   --accent-text: #ffffff;
+  --accent-text-dark: rgb(70, 70, 70);
 
   --serif-font: "Noto Serif"; /*Serif*/
   --sans-serif-font: "Ubuntu", sans-serif; /*Sans-serif*/
   --code-font: "Fira Code", monospace; /*Monospace*/
+  --btn-font: "Roboto", sans-serif; /*Used in buttons*/
 
   --code-color: rgb(86, 185, 252);
   --code-bgcolor: rgb(31, 31, 31);
@@ -187,16 +192,17 @@ section {
   font-size: 3rem;
 }
 
-.hero-container .btn {
-  background-color: #fff;
-  border: 3px solid var(--accent-text);
+.hero-container .btn,
+.hero-container .btn:hover {
+  background-color: var(--accent-text);
+  border: 1px solid var(--accent-text);
   color: var(--accent-color);
   margin: 10px;
 }
 
 .hero-container .btn.btn-secondary {
   color: var(--accent-text);
-  border: 3px solid var(--accent-text);
+  border: 1px solid var(--accent-text);
 }
 
 .hero-container .hero-cta {
@@ -207,7 +213,7 @@ section {
 
 footer {
   min-height: var(--navbar-height);
-  background-color: var(--border-color);
+  background-color: var(--footer-bgcolor);
   width: 100vw;
   height: auto;
   color: var(--text-color);
@@ -232,6 +238,9 @@ blockquote {
   color: var(--accent-text);
   padding: 0.4rem;
   border-radius: var(--border-radius);
+}
+.highlight:hover {
+  color: var(--accent-text);
 }
 
 [data-tooltip] {
@@ -291,6 +300,9 @@ blockquote {
 }
 .monospace {
   font-family: var(--code-font);
+}
+.btn-font {
+  font-family: var(--btn-font);
 }
 
 .semitransparent {
@@ -477,33 +489,48 @@ pre.code .cl {
 }
 
 .btn {
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
   background-color: var(--accent-color);
-  border: 3px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
   color: var(--accent-text);
   padding: 10px 20px 10px 20px;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-family: var(--btn-font);
+  /* font-weight: 500; */
   border-radius: var(--border-radius);
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
   margin: 0.5rem;
+  text-transform: uppercase;
+  background-position: center;
+  outline: none;
+}
+.btn:hover {
+  box-shadow: 2px 2px 0.5rem rgba(128, 128, 128, 0.3);
+  background: var(--accent-color)
+    radial-gradient(circle, transparent 1%, rgba(255, 255, 255, 0.3) 1%)
+    center/15000%;
+  text-decoration: none;
 }
 
-.btn:hover {
-  background-color: var(--accent-dark);
-  border: 3px solid var(--accent-dark);
-  color: var(--accent-text);
-  text-decoration: none;
+.btn:active {
+  background-color: var(--accent-color);
+  background-size: 100%;
+  transition: background 0s;
 }
 
 .btn.btn-secondary {
   background-color: transparent;
-  color: var(--accent-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
 }
 
 .btn.btn-secondary:hover {
-  border: 3px solid var(--accent-dark);
-  background-color: var(--accent-dark);
-  color: var(--accent-text);
+  border: 1px solid var(--border-color);
+  background-color: var(--accent-almost-transparent);
+  box-shadow: none;
 }
 
 .btn.btn-block {
@@ -516,37 +543,49 @@ pre.code .cl {
   border-radius: 30px;
 }
 
+.btn.btn-text {
+  border: 0px;
+  background-color: transparent;
+  color: var(--accent-color);
+}
+
+.btn.btn-text:hover {
+  background-color: var(--accent-almost-transparent);
+  box-shadow: none;
+}
+
 .btn.btn-green {
   background-color: var(--shade-green);
-  border: 3px solid var(--shade-green);
+  border: 1px solid var(--shade-green);
 }
 
 .btn.btn-green:hover {
   background-color: var(--shade-green-dark);
-  border: 3px solid var(--shade-green-dark);
+  border: 1px solid var(--shade-green-dark);
 }
 .btn.btn-red {
   background-color: var(--shade-red);
-  border: 3px solid var(--shade-red);
+  border: 1px solid var(--shade-red);
 }
 .btn.btn-red:hover {
   background-color: var(--shade-red-dark);
-  border: 3px solid var(--shade-red-dark);
+  border: 1px solid var(--shade-red-dark);
 }
 
 .btn.btn-blue {
   background-color: var(--shade-blue);
-  border: 3px solid var(--shade-blue);
+  border: 1px solid var(--shade-blue);
 }
 .btn.btn-blue:hover {
   background-color: var(--shade-blue-dark);
-  border: 3px solid var(--shade-blue-dark);
+  border: 1px solid var(--shade-blue-dark);
 }
 
 *:disabled,
 .disabled {
   opacity: 0.5;
   pointer-events: none;
+  user-select: none;
 }
 
 .checkbox {
@@ -563,7 +602,7 @@ pre.code .cl {
   width: 1.2rem;
   height: 1.2rem;
   margin-right: 0.5rem;
-  border: 0.2rem solid var(--accent-color);
+  border: 1px solid var(--border-color);
   border-radius: calc(var(--border-radius) / 2);
   display: flex;
   align-items: center;
@@ -573,29 +612,38 @@ pre.code .cl {
 }
 
 .checkbox:hover > .checkbox-box {
-  border: 0.2rem solid var(--accent-light);
+  border: 1px solid var(--accent-light);
   background-color: var(--accent-light);
 }
 
 .checkbox-box::after {
-  content: "\2714";
-  font-size: 0.8rem;
-  color: transparent;
-  transform: scale(0);
+  content: " ";
+  position: absolute;
+  height: 0.5rem;
+  width: 0.2rem;
   transition: all 0.2s ease-in-out;
   user-select: none;
+  border-right: 0.2rem solid var(--accent-text);
+  border-bottom: 0.2rem solid var(--accent-text);
+  transform: scale(0) rotate(45deg);
+}
+
+.checkbox-box::after:hover {
+  border-bottom-color: var(--accent-light);
 }
 
 .checkbox-input:checked + .checkbox-box {
+  border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
 }
 
 .checkbox:hover > .checkbox-input:checked + .checkbox-box {
+  border: 1px solid var(--accent-light);
   background-color: var(--accent-light);
 }
 
 .checkbox-input:checked + .checkbox-box::after {
-  transform: scale(1);
+  transform: scale(1) rotate(45deg);
   color: var(--accent-text);
 }
 
@@ -614,12 +662,12 @@ pre.code .cl {
   width: 1.2rem;
   border-radius: 50%;
   margin-right: 0.5rem;
-  border: 0.2rem solid var(--accent-color);
+  border: 1px solid var(--border-color);
   transition: all 0.2s ease-in-out;
 }
 
 .radio:hover > .radio-radio {
-  border: 0.2rem solid var(--accent-light);
+  border: 0.4rem solid var(--accent-light);
 }
 
 .radio:hover > .radio-input:checked + .radio-radio {
@@ -658,16 +706,16 @@ pre.code .cl {
 }
 
 .toggle:hover > .toggle-switch {
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .toggle-switch::after {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 3px;
-  height: calc(var(--height) - 6px);
-  width: calc(var(--height) - 6px);
+  top: 0.2rem;
+  left: 0.2rem;
+  height: calc(var(--height) - 0.4rem);
+  width: calc(var(--height) - 0.4rem);
   border-radius: var(--toggle-border-radius);
   background-color: var(--accent-text);
   transition: all 0.2s;

@@ -13,14 +13,14 @@
     <!--/end-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../res/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="res/favicon.png" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../fluid.css" />
     <script src="../fluid.js" defer></script>
-    <title>FluidCSS</title>
+    <title>FluidCSS Documentation</title>
   </head>
   <body>
     <nav>
@@ -57,6 +57,11 @@
       </ul>
       <ul>
         <a class="highlight" href="input.html">Inputs</a>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#checkboxes">Checkboxes</a></li>
+        <li><a href="#radio-buttons">Radio Buttons</a></li>
+        <li><a href="#text-input">Text Input</a></li>
+        <li><a href="#toggle-switches">Toggles</a></li>
       </ul>
       <ul>
         <a href="components.html">Components</a>
@@ -67,6 +72,8 @@
     </aside>
     <div class="container">
       <h1 >User Inputs</h1>
+      <span id="buttons"></span>
+      <br><hr>
       <h2>Buttons</h2>
       <p>
         Usage: <br></p>
@@ -80,6 +87,9 @@
   &lt;button class="btn btn-pill">Pill Button&lt;/button>
   &lt;button class="btn btn-pill btn-secondary"> Secondary Pill Button&lt;/button>
 
+  <span class="comment">//Text Buttons</span>
+  &lt;button class="btn btn-text">Button that looks like text&lt;/button>
+
   <span class="comment">//Primary-colored Buttons</span>
   &lt;button class="btn btn-red">Red Button&lt;/button>       
   &lt;button class="btn btn-green"> Green Button&lt;/button>
@@ -91,13 +101,15 @@
 <p>
         <button class="btn">Primary</button>
         <button class="btn btn-secondary">Secondary</button>
-        <br>
+        <br><br>
         <button class="btn" disabled>Disabled-Primary</button>
         <button class="btn btn-secondary" disabled>Disabled-Secondary</button>
-        <br>
+        <br><br>
         <button class="btn btn-pill">Pill Button</button>
         <button class="btn btn-pill btn-secondary"> Secondary Pill Button</button>
-        <br>
+        <br><br>
+        <button class="btn btn-text">Button that looks like text</button>
+        <br><br>
         <button class="btn btn-red">Red Button</button>
         <button class="btn btn-green"> Green Button</button>
         <button class="btn btn-blue"> Blue Button</button>
@@ -105,6 +117,10 @@
         <button class="btn btn-block">Primary Block-level</button>
         <button class="btn btn-block btn-secondary">Secondary Block-level</button>
       </p>
+      <span id="checkboxes"></span>
+      <hr>
+      <br>
+
       <h2>Checkboxes</h2>
       <pre class="code" data-lang="Checkboxes - HTML5"><code>
  &lt;label class="checkbox">                           <span class="comment">&lt;-- Create a label with a class of 'checkbox'</span>
@@ -116,7 +132,19 @@
       <p>
         What do you like?<br><br>
         <label class="checkbox">
-          <input type="checkbox" class="checkbox-input" />
+          <input type="checkbox" class="checkbox-input" checked />
+          <span class="checkbox-box"></span>
+          Sandwiches
+        </label>
+        <br><br>
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox-input" checked />
+          <span class="checkbox-box"></span>
+          Croissant
+        </label>
+        <br><br>
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox-input" checked />
           <span class="checkbox-box"></span>
           Pizza
         </label>
@@ -127,19 +155,22 @@
           Pasta
         </label>
         <br><br>
-        <label class="checkbox">
-          <input type="checkbox" class="checkbox-input" />
+        <label class="checkbox disabled">
+          <input type="checkbox" class="checkbox-input" checked disabled />
           <span class="checkbox-box"></span>
-          Noodles
+          Noodles [Everyone has to like Noodles]
         </label>
         <br><br>
         <label class="checkbox disabled">
           <input type="checkbox" class="checkbox-input" disabled />
           <span class="checkbox-box"></span>
-          Useless code [No one likes useless code]
+          Fried Chicken [Sorry, I'm veg]
         </label>
       </p>
     </p>
+    <span id="radio-buttons"></span>
+    <hr>
+    <br>
     <h2>Radio Buttons</h2>
 <pre class="code" data-lang="Radio Buttons - HTML5"><code>
 &lt;label class="radio">                           <span class="comment">&lt;-- Create a label with a class of 'radio'</span>
@@ -151,6 +182,18 @@
     <p>
         Rate FluidCSS
         <br><br>
+        <label class="radio">
+          <input type="radio" name="radio" class="radio-input" checked />
+          <span class="radio-radio"></span>
+          7 stars
+      </label>
+      <br><br>
+      <label class="radio">
+        <input type="radio" name="radio" class="radio-input" />
+        <span class="radio-radio"></span>
+        6 stars
+      </label>
+      <br><br>
         <label class="radio">
             <input type="radio" name="radio" class="radio-input" />
             <span class="radio-radio"></span>
@@ -184,6 +227,9 @@
           1 star
         </label>
     </p>
+    <span id="text-input"></span>
+    <hr>
+    <br>
     <h2>Text Input</h2>
     <p>
       <input type="text" placeholder="Name" class="text-input" />
@@ -195,30 +241,35 @@
       <input type="password" placeholder="Password" class="text-input"><br><br>
       <button class="btn btn-block">Submit</button>
     </p>
+    <span id="toggle-switches"></span>
+    <hr>
+    <br>
     <h2>Toggle Switches</h2>
       <p>
+        Choose your preferred Network Connection:
+        <br><br><br>
       <label class="toggle">
         <input type="checkbox" class="toggle-input" />
         <span class="toggle-switch"></span>
-        Toggle Switch
+        Mobile Data
       </label>
       <br><br>
       <label class="toggle">
         <input type="checkbox" class="toggle-input" checked />
         <span class="toggle-switch"></span>
-        Checked
+        A fast WiFi network you hacked into
       </label>
       <br><br>
       <label class="toggle disabled">
         <input type="checkbox" class="toggle-input" disabled />
         <span class="toggle-switch"></span>
-        Disabled
+        Aeroplane Mode [Sorry, you can't binge Netflix on Aeroplane Mode]
       </label>
       <br><br>
       <label class="toggle disabled">
         <input type="checkbox" class="toggle-input" checked disabled />
         <span class="toggle-switch"></span>
-        Checked Disabled
+        Nearest free WiFi point. [Always on]
       </label>
     </p>
 
