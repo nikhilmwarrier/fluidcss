@@ -34,3 +34,27 @@ for (var i = 0; i < pl; i++) {
     line_num.innerHTML += "<span>" + (j + 1) + "</span>";
   }
 }
+
+//For custom File Upload btn//
+document.querySelectorAll(".file-upload-btn").forEach(function (button) {
+  const hiddenInput = button.parentElement.querySelector(".file-upload-input");
+  const label = button.parentElement.querySelector(".file-upload-label");
+  const defaultLabelText = "No files selected";
+
+  //Set default text for label
+  label.textContent = defaultLabelText;
+  label.title = defaultLabelText;
+
+  button.addEventListener("click", function () {
+    hiddenInput.click();
+  });
+
+  hiddenInput.addEventListener("change", function () {
+    const filenameList = Array.from(hiddenInput.files).map(function (file) {
+      return file.name;
+    });
+
+    label.textContent = filenameList.join(", ") || defaultLabelText;
+    label.title = label.textContent;
+  });
+});
