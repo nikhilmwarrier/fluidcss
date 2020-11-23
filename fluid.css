@@ -111,7 +111,7 @@ body {
 }
 .modal-overlay > .modal {
   width: 500px;
-  max-width: 90%;
+  max-width: 80vw;
   height: auto;
   max-height: 60%;
   overflow-y: auto;
