@@ -50,10 +50,15 @@
           margin-bottom: 20px;
         }
       }
+      .align-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     </style>
   </head>
   <body>
-    <nav>
+    <nav class="state-initial" id="nav-scroll-effect">
       <div class="logo">
         <img src="docs/res/logo.png" alt="" media="max-width: 767px" />
       </div>
@@ -61,11 +66,8 @@
         <a href="docs/index.html">Docs</a>
         <a href="https://github.com/nikhilmwarrier/fluidcss">Download</a>
 
-        <a href="#" id="expand-nav" onclick="openNav()" class="material-icons"
+        <a id="expand-nav" onclick="openNav()" class="material-icons"
           >expand_more</a
-        >
-        <a href="#" id="contr-nav" onclick="closeNav()" class="material-icons"
-          >expand_less</a
         >
       </div>
     </nav>
@@ -73,6 +75,9 @@
       <a href="../blog/about">About</a>
       <a href="../">Developer</a>
       <a href="mailto:champion.26nikhil@gmail.com">Contact</a>
+      <span id="contr-nav" onclick="closeNav()" class="material-icons"
+        >expand_less</span
+      >
     </div>
 
     <section class="fullpage-section hero-section">
@@ -92,6 +97,15 @@
             class="btn btn-secondary"
             >Download</a
           >
+        </div>
+      </div>
+    </section>
+    <section class="fullpage-section align-center">
+      <div>
+        <h1>This is awesome!</h1>
+        <div class="hero-cta">
+          <button class="btn">Buy now!</button>
+          <button class="btn btn-secondary">Steal from GitHub</button>
         </div>
       </div>
     </section>

@@ -10,7 +10,6 @@ function openNav() {
   sidenav.style.height = "100%";
   sidenav.style.paddingTop = "60px";
   document.querySelector(".closebtn");
-  expandNav.style.display = "none";
   contrNav.style.display = "block";
 }
 
@@ -58,3 +57,27 @@ document.querySelectorAll(".file-upload-btn").forEach(function (button) {
     label.title = label.textContent;
   });
 });
+
+/*****Intersection observers*****/
+const navbar = document.querySelector("#nav-scroll-effect");
+const section1 = document.querySelector(".hero-section");
+
+section1Opts = {
+  rootMargin: "-75px 0px 0px 0px",
+};
+
+const section1Observer = new IntersectionObserver(function (
+  entries,
+  section1Observer
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      navbar.classList.remove("state-initial");
+    } else {
+      navbar.classList.add("state-initial");
+    }
+  });
+},
+section1Opts);
+
+section1Observer.observe(section1);

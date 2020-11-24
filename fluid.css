@@ -45,7 +45,8 @@
   --tooltip-bgcolor: rgba(0, 0, 0, 0.8);
 
   --navbar-text-color: rgb(255, 255, 255);
-  --navbar-height: 70px;
+  --navbar-initial-height: 75px;
+  --navbar-height: 60px;
   --navbar-type: fixed;
   /*Choose whether you want your navbar to be fixed or hide on scroll 
    options: fixed or absolute;
@@ -111,7 +112,7 @@ body {
 }
 .modal-overlay > .modal {
   width: 500px;
-  max-width: 80vw;
+  max-width: 90%;
   height: auto;
   max-height: 60%;
   overflow-y: auto;
@@ -176,7 +177,7 @@ body {
 }
 
 .hero-container {
-  background-color: var(--accent-semitransparent);
+  background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(var(--background-blur));
   padding: 2rem;
   border-radius: var(--border-radius);
@@ -209,6 +210,13 @@ body {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap-reverse;
+}
+
+@media screen and (max-width: 400px) {
+  .hero-container {
+    height: 100%;
+    margin-top: var(--navbar-initial-height);
+  }
 }
 
 footer {
@@ -271,7 +279,8 @@ blockquote {
 }
 
 [data-tooltip]:hover::after,
-[data-tooltip]:active::after {
+[data-tooltip]:active::after,
+[data-tooltip]:focus::after {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -312,6 +321,14 @@ blockquote {
 
 .semitransparent {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.transparent {
+  background: transparent;
+}
+
+.blur {
+  backdrop-filter: blur(var(--background-blur));
 }
 
 .fl-embed {
@@ -655,40 +672,29 @@ select:active > option,
   height: 0.7rem;
   margin: auto;
   transition: all 0.2s;
-  border: 0.7rem solid white;
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .range::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
-  height: 1rem;
-  width: 1rem;
-  border-radius: 0.5rem;
-  transition: all 0.2s;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 0.8rem;
+  transition: all 0.1s ease-in;
   background-color: var(--accent-text);
   color: var(--accent-text);
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.2);
 }
 
 .range::-moz-range-thumb {
-  border: none;
-  height: 1rem;
-  width: 1rem;
-  border-radius: 0.5rem;
-  transition: all 0.2s;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 0.8rem;
+  transition: all 0.1s ease-in;
   background-color: var(--accent-text);
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.2);
-}
-
-.range:hover::-webkit-slider-thumb {
-  height: 2.5rem;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-.range:hover::-moz-range-thumb {
-  height: 2.5rem;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .range:focus {
@@ -820,11 +826,7 @@ select:active > option,
   border-radius: var(--toggle-border-radius);
   background-color: var(--border-color);
   margin-right: 1rem;
-  transition: all 0.2s;
-}
-
-.toggle:hover > .toggle-switch {
-  box-shadow: 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+  transition: all 0.1s;
 }
 
 .toggle-switch::after {
@@ -836,7 +838,7 @@ select:active > option,
   width: calc(var(--height) - 0.4rem);
   border-radius: var(--toggle-border-radius);
   background-color: var(--accent-text);
-  transition: all 0.2s;
+  transition: all 0.2s ease-out;
 }
 
 .toggle-input:checked + .toggle-switch::after {
@@ -885,8 +887,9 @@ nav {
   color: var(--navbar-text-color);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   z-index: 1000;
+  transition: all 0.2s;
 }
 
 nav div.links,
@@ -897,12 +900,20 @@ nav div.logo {
   height: 100%;
 }
 
+nav div.links {
+  margin: 0 2rem 0 0;
+}
+
+nav div.logo {
+  margin: 0 0 0 2rem;
+}
+
 nav div.logo img {
   max-height: 100%;
 }
 
 nav a {
-  padding: 23px;
+  padding: 1.2rem;
   color: var(--navbar-text-color);
 }
 
@@ -912,24 +923,31 @@ nav a:hover {
   text-decoration: none;
 }
 
+.state-initial {
+  height: var(--navbar-initial-height);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(var(--background-blur));
+}
+
 .sidenav {
   height: 0px;
   width: 250px;
   position: fixed;
   z-index: 100;
-  top: var(--navbar-height);
+  top: 0;
   right: 0;
   background-color: var(--accent-semitransparent);
   backdrop-filter: blur(--background-blur);
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 0px;
+  padding: 0px;
   backdrop-filter: blur(10px);
   overflow-y: hidden;
+  z-index: 1020;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 1rem 1rem 1rem 4rem;
   text-decoration: none;
   font-size: 25px;
   color: var(--navbar-text-color);
@@ -952,8 +970,21 @@ nav a:hover {
   }
 }
 
+#expand-nav {
+  z-index: 1050;
+}
+
 #contr-nav {
   display: none;
+  background-color: var(--accent-darker);
+  width: 100%;
+  text-align: center;
+  float: right;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 aside {
@@ -992,10 +1023,9 @@ aside ul > a {
 
 .details {
   background-color: var(--accent-almost-transparent);
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: var(--border-radius);
   transition: all 0.2s;
-  border: 0.2rem solid var(--border-color);
 }
 
 .details[open] > .content {
@@ -1004,11 +1034,20 @@ aside ul > a {
 
 .details:focus-within {
   outline: none;
-  border: 0.2rem solid var(--accent-color);
 }
 
 .details summary {
   cursor: pointer;
+}
+
+.details summary::marker {
+  color: var(--border-color);
+  transition: all 0.2s ease-in;
+}
+
+.details summary:hover::marker,
+.details summary:focus::marker {
+  color: var(--accent-color);
 }
 
 .details summary:focus {

@@ -34,15 +34,15 @@
         <a href="#" id="expand-nav" onclick="openNav()" class="material-icons"
           >expand_more</a
         >
-        <a href="#" id="contr-nav" onclick="closeNav()" class="material-icons"
-          >expand_less</a
-        >
       </div>
     </nav>
     <div class="sidenav" id="sidenav">
       <a href="../../blog/about">About</a>
       <a href="../../">Developer</a>
       <a href="mailto:champion.26nikhil@gmail.com">Contact</a>
+      <span id="contr-nav" onclick="closeNav()" class="material-icons"
+      >expand_less</span
+    >
     </div>
     <aside>
       <p>FluidCSS Documentataion</p>
@@ -246,7 +246,8 @@
     <br>
     <h2>Text Input</h2>
     <details class="details">
-      <summary>Show snippet</summary>
+      <summary data-tooltip='click to show code snippet'>
+        Show snippet</summary>
       <div class="content">
         <pre class="code" data-lang="English"><code><span class="comment">
           //Under progress... Check back soon!
@@ -284,7 +285,7 @@
         Mobile Data
       </label>
       <br><br>
-      <label class="toggle">
+      <label class="toggle" tabindex="0">
         <input type="checkbox" class="toggle-input" checked />
         <span class="toggle-switch"></span>
         A fast WiFi network you hacked into
