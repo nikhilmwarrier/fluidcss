@@ -239,14 +239,20 @@ body {
   }
 }
 
-svg.curve-divider {
-  fill: white;
-  position: absolute;
-  width: 100%;
-  bottom: 5vh;
-  height: 20vh;
+.version-header,
+a.version-header {
+  background-color: var(--code-bgcolor);
+  color: var(--code-color);
+  font-family: var(--code-font);
+  font-size: 1.25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius);
 }
 
+a.version-header:hover {
+  color: var(--code-color);
+  text-decoration: underline;
+}
 .hero-container {
   background-color: rgba(0, 0, 0, 0);
   backdrop-filter: blur(var(--background-blur));
