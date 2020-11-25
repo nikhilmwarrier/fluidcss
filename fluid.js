@@ -63,7 +63,7 @@ const navbar = document.querySelector("#nav-scroll-effect");
 const section1 = document.querySelector(".hero-section");
 
 section1Opts = {
-  rootMargin: "-75px 0px 0px 0px",
+  rootMargin: "-95% 0px 0px 0px",
 };
 
 const section1Observer = new IntersectionObserver(function (

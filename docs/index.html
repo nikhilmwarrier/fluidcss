@@ -14,6 +14,7 @@
     
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#C300FF">
     <link rel="shortcut icon" href="res/favicon.png" type="image/x-icon">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -69,11 +70,14 @@
   &lt;script src="https://nikhilmwarrier.github.io/fluidcss/fluid.js" defer&gt;&lt;/script&gt;</code></pre>
         </p>
         <hr />
-        
+
         <h2>Starter template</h2>
         <p>
-        Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
+        Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. 
       </p>
+      <details class="details">
+        <summary>  Show demo page</summary>
+        <div class="content">
       <pre class="code" data-lang="HTML5">
 <code>&lt;!DOCTYPE html&gt;
 
@@ -81,20 +85,20 @@
 
     &lt;head&gt;
 
-      &lt;!--Required meta tags--&gt;  
+    <span class="comment">&lt;!--Required meta tags--&gt; </span> 
       &lt;meta charset="UTF-8"&gt;
       &lt;meta name="viewport"
       content="width=device-width,
         initial-scale=1.0"&gt;
 
-        &lt;!--Google's Material Icons [Optional, but highly recommended]--&gt;
+        <span class="comment">&lt;!--Google's Material Icons [Optional, but highly recommended]--&gt;</span>
         &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
         /&gt;
 
-        &lt;!--FluidCSS Stylesheet--&gt;
+        <span class="comment">&lt;!--FluidCSS Stylesheet--&gt;</span>
         &lt;link rel="stylesheet" href="https://nikhilmwarrier.github.io/fluidcss/fluid.css" /&gt;
 
-        &lt;!--FluidCSS JavaScript--&gt;
+        <span class="comment">&lt;!--FluidCSS JavaScript--&gt;</span>
         &lt;script src="https://nikhilmwarrier.github.io/fluidcss/fluid.js" defer&gt;&lt;/script&gt;
 
       &lt;title&gt; FluidCSS Template &lt;/title&gt;
@@ -108,6 +112,7 @@
     &lt;/body&gt;
 
   &lt;/html&gt;</code></pre>
+</details>
       <h2>A word on box-sizing</h2>
       <p>
       For more straightforward and digestible sizing, we use <code>box-sizing: border-box</code> on all elements. If you want to override this on some very specific cases, just add something like this to your css rules:

@@ -8,7 +8,7 @@
   --accent-semitransparent: rgba(195, 0, 255, 0.7);
   --accent-almost-transparent: rgba(195, 0, 255, 0.1);
   --accent-light: rgb(204, 65, 247);
-  --accent-lighter: rgb(216, 99, 218);
+  --accent-lighter: rgb(228, 140, 255);
   --accent-dark: rgb(150, 0, 196);
   --accent-darker: rgb(89, 0, 116);
 
@@ -45,7 +45,8 @@
   --tooltip-bgcolor: rgba(0, 0, 0, 0.8);
 
   --navbar-text-color: rgb(255, 255, 255);
-  --navbar-initial-height: 75px;
+  --navbar-initial-height: 80px;
+  --navbar-initial-bgcol: transparent;
   --navbar-height: 60px;
   --navbar-type: fixed;
   /*Choose whether you want your navbar to be fixed or hide on scroll 
@@ -163,21 +164,45 @@ body {
 }
 
 .hero-section {
-  background: linear-gradient(var(--accent-color), var(--accent-lighter));
+  /* background: linear-gradient(var(--accent-color), var(--accent-lighter)); */
   background: var(--accent-color)
-    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/city.jpg) no-repeat
-    center / cover;
-  background-attachment: fixed;
-  background-size: cover;
-  background-blend-mode: luminosity;
+    linear-gradient(
+      -45deg,
+      var(--accent-lighter),
+      var(--accent-color),
+      var(--accent-dark),
+      var(--accent-lighter),
+      var(--accent-color)
+    );
+  /* background-attachment: fixed; */
+  background-size: 400%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  animation: background-shift 20s ease-in-out alternate infinite;
+  height: 95vh;
+}
+
+@keyframes background-shift {
+  from {
+    background-position: 0 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+svg.curve-divider {
+  fill: white;
+  position: absolute;
+  width: 100%;
+  bottom: 5vh;
+  height: 20vh;
 }
 
 .hero-container {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0);
   backdrop-filter: blur(var(--background-blur));
   padding: 2rem;
   border-radius: var(--border-radius);
@@ -185,22 +210,27 @@ body {
 
 .hero-container p {
   color: var(--accent-text);
-  font-size: 1.5rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
 }
 
 .hero-container h1 {
   color: var(--accent-text);
-  font-size: 3rem;
+  font-size: 5rem;
+  line-height: 6rem;
+  text-align: center;
 }
 
-.hero-container .btn,
-.hero-container .btn:hover {
-  background-color: var(--accent-text);
-  border: 1px solid var(--accent-text);
-  color: var(--accent-color);
+.hero-container a.btn-secondary,
+.hero-container a.btn-secondary:hover {
+  border: 0.2rem solid var(--accent-text);
+  color: var(--accent-text);
   margin: 10px;
+  font-weight: bold;
 }
 
+/*
 .hero-container .btn.btn-secondary {
   color: var(--accent-text);
   border: 1px solid var(--accent-text);
@@ -210,11 +240,12 @@ body {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap-reverse;
-}
+} */
 
 @media screen and (max-width: 400px) {
   .hero-container {
     height: 100%;
+    width: 100%;
     margin-top: var(--navbar-initial-height);
   }
 }
@@ -509,6 +540,10 @@ pre.code .cl {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-dark);
+}
+
+a.btn:hover {
+  color: var(--accent-text);
 }
 
 .btn {
@@ -925,7 +960,7 @@ nav a:hover {
 
 .state-initial {
   height: var(--navbar-initial-height);
-  background: rgba(0, 0, 0, 0.4);
+  background: var(--navbar-initial-bgcol);
   backdrop-filter: blur(var(--background-blur));
 }
 
@@ -1043,6 +1078,16 @@ aside ul > a {
 .details summary::marker {
   color: var(--border-color);
   transition: all 0.2s ease-in;
+}
+
+::-webkit-details-marker {
+  color: var(--border-color);
+  transition: all 0.2s ease-in;
+}
+
+.details summary:hover::-webkit-details-marker,
+.details summary:focus::-webkit-details-marker {
+  color: var(--accent-color);
 }
 
 .details summary:hover::marker,
