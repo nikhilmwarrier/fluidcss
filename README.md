@@ -4,9 +4,10 @@
 
 ## Shoutout to all stargazers and contributors!
 
-[![Stargazers repo roster for @nikhilmwarrier/fluidcss](https://reporoster.com/stars/nikhilmwarrier/fluidcss)](https://github.com/nikhilmwarrier/fluidcss/stargazers)
-
 [![Forkers repo roster for @nikhilmwarrier/fluidcss](https://reporoster.com/forks/nikhilmwarrier/fluidcss)](https://github.com/nikhilmwarrier/fluidcss/network/members)
+
+
+[![Stargazers repo roster for @nikhilmwarrier/fluidcss](https://reporoster.com/stars/nikhilmwarrier/fluidcss)](https://github.com/nikhilmwarrier/fluidcss/stargazers)
 
 # FluidCSS 
 ![FluidCSS_banner](https://raw.githubusercontent.com/nikhilmwarrier/fluidcss/main/docs/res/FluidCSS-banner.png)
