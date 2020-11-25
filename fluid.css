@@ -152,11 +152,57 @@ body {
   text-decoration: none;
 }
 
-.container {
+.spinner {
+  height: 4rem;
+  width: 4rem;
+  border: 0.5rem solid var(--border-color);
+  border-top-color: var(--accent-color);
+  border-radius: 50%;
+  animation: spin-loader 1s ease infinite;
+}
+
+.spin-once {
+  animation: spin-loader 1s ease;
+}
+
+.spinner-small {
+  height: 2rem;
+  width: 2rem;
+  border: 0.3rem solid var(--border-color);
+  border-top-color: var(--accent-color);
+  border-radius: 50%;
+  animation: spin-loader 1s ease infinite;
+}
+
+.spinner-large {
+  height: 6rem;
+  width: 6rem;
+  border: 0.75rem solid var(--border-color);
+  border-top-color: var(--accent-color);
+  border-radius: 50%;
+  animation: spin-loader 1s ease infinite;
+}
+
+.spinner .container {
   margin-top: calc(var(--navbar-height) + 1.2rem);
   margin-left: calc(var(--aside-width));
   margin-right: auto;
   max-width: 100vw;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .fullpage-section {
@@ -576,7 +622,7 @@ a.btn:hover {
 .btn:active {
   background-color: var(--accent-color);
   background-size: 100%;
-  transition: background 0s;
+  transition: background 0.1s;
 }
 
 .btn.btn-secondary {
@@ -638,6 +684,54 @@ a.btn:hover {
 .btn.btn-blue:hover {
   background-color: var(--shade-blue-dark);
   border: 1px solid var(--shade-blue-dark);
+}
+
+.btn.btn-loading::after {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  height: 1.2rem;
+  width: 1.2rem;
+  border: 0.4rem solid transparent;
+  border-top: 0.4rem solid var(--accent-text);
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: spin-loader 1s ease infinite;
+}
+
+.btn-secondary.btn-loading::after {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  height: 1.2rem;
+  width: 1.2rem;
+  border: 0.4rem solid transparent;
+  border-top: 0.4rem solid var(--accent-color);
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: spin-loader 1s ease infinite;
+}
+
+.btn.btn-loading .btn-text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@keyframes spin-loader {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 .file-upload {

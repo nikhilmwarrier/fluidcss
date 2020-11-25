@@ -22,7 +22,7 @@
     <script src="../fluid.js" defer></script>
     <title>FluidCSS Documentation</title>
   </head>
-
+<body>
     <nav>
       <div class="logo">
         <img src="res/logo.png" alt="" media="max-width: 767px" />
@@ -118,6 +118,13 @@
         <br>
         <button class="btn btn-block">Primary Block-level</button>
         <button class="btn btn-block btn-secondary">Secondary Block-level</button>
+        <br>
+        <button class="btn btn-loading" onclick="this.classList.toggle('btn-loading');">
+          <span class="btn-text">Click to toggle spinner</span>
+        </button>
+        <button class="btn btn-secondary btn-loading" onclick="this.classList.toggle('btn-loading');">
+          <span class="btn-text">Click to toggle spinner</span>
+        </button>
       </p>
       <span id="checkboxes"></span>
       <hr>
