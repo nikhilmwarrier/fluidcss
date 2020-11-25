@@ -25,15 +25,12 @@ A minimal, hackable css library with responsive design in mind.
  |`<aside>` element for fixed sidebar|Ready|
  |Documentation base template|Ready|
  |Custom Scrollbar|Ready|
- |Documentation for the project|Under Progress|
  |`<code>` element customization|Ready|
  |Checkboxes| Ready|
  |Radio Buttons|Ready|
  |Pure CSS Tooltips|Ready|
  |`<form>` and `<input>`*|Ready|
  |Pure CSS Modal|Ready|
- |Dark Mode with `localStorage()` API*|Pending|
- |Sharing using `navigator.share` API*|Pending|
  |Fulscreen templates using `<section>`|Ready|
  |CSS variable for `border-radius` property|Ready|
  
