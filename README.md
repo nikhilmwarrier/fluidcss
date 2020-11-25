@@ -2,6 +2,12 @@
 - [Project Roadmap](#project-roadmap)
 - [Contribution Guidelines](#contribution-guidelines)
 
+## Shoutout to all stargazers and contributors!
+
+[![Stargazers repo roster for @nikhilmwarrier/fluidcss](https://reporoster.com/stars/nikhilmwarrier/fluidcss)](https://github.com/nikhilmwarrier/fluidcss/stargazers)
+
+[![Forkers repo roster for @nikhilmwarrier/fluidcss](https://reporoster.com/forks/nikhilmwarrier/fluidcss)](https://github.com/nikhilmwarrier/fluidcss/network/members)
+
 # FluidCSS 
 ![FluidCSS_banner](https://raw.githubusercontent.com/nikhilmwarrier/fluidcss/main/docs/res/FluidCSS-banner.png)
 
