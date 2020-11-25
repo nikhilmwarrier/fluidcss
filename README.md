@@ -1,5 +1,4 @@
-Note: If you are looking for the website source code, it is in the [gh-pages](https://github.com/nikhilmwarrier/fluidcss/tree/gh-pages/) branch.
-
+### Jump to:
 - [Project Roadmap](#project-roadmap)
 - [Contribution Guidelines](#contribution-guidelines)
 
@@ -31,12 +30,11 @@ A minimal, hackable css library with responsive design in mind.
  |Checkboxes| Ready|
  |Radio Buttons|Ready|
  |Pure CSS Tooltips|Ready|
- |`<form>` and `<input>`*|Under Progress|
+ |`<form>` and `<input>`*|Ready|
  |Pure CSS Modal|Ready|
  |Dark Mode with `localStorage()` API*|Pending|
  |Sharing using `navigator.share` API*|Pending|
  |Fulscreen templates using `<section>`|Ready|
- |Page Preloader Animation*|Pending|
  |CSS variable for `border-radius` property|Ready|
  
  
