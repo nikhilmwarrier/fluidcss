@@ -142,7 +142,57 @@
           <br /><br />
           <div class="spinner-large"></div>
         </div>
+        <hr />
+        <h2>Toast messages</h2>
+        <p>
+          Toast messages are really useful to send short messages and alerts to
+          users.
+          <br /><br />
+          <button class="btn" onclick="CreateToast('This is cool')">
+            Send Toast</button
+          ><br />
+          <button
+            class="btn btn-red"
+            onclick="CreateToast('This isn\'t cool', 'toast-error')"
+          >
+            Send Error Toast
+          </button>
+          <br />
+          <button
+            class="btn btn-green"
+            onclick="CreateToast('This is awesome', 'toast-green')"
+          >
+            Send Green Toast
+          </button>
+          <br />
+          <button
+            class="btn btn-blue"
+            onclick="CreateToast('This is blue', 'toast-blue')"
+          >
+            Send Blue Toast
+          </button>
+          <br />
+          <button
+            class="btn"
+            onclick="CreateToastWithTimeout('I will dissapear in 2s', 'toast', 2)"
+          >
+            Send Toast with timeout
+          </button>
+          <br /><br />
+          <label>
+            Type something and press enter to see the magic!
+            <input
+              type="text"
+              class="text-input"
+              onchange="if(!this.value == ''){CreateToastWithTimeout(this.value, 'toast-green', 2)}"
+            />
+          </label>
+        </p>
       </section>
+      <!-- <div class="toast">
+        Here is a toast!
+        <span class="toast-close"></span>
+      </div> -->
     </div>
   </body>
 </html>
