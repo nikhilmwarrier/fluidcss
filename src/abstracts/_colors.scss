@@ -1,0 +1,26 @@
+$accent: rgb(132, 0, 255);
+$grey: #888;
+
+$accent0: darken($accent, 50%);
+$accent1: darken($accent, 40%);
+$accent2: darken($accent, 30%);
+$accent3: darken($accent, 20%);
+$accent4: darken($accent, 10%);
+
+$accent5: lighten($accent, 10%);
+$accent6: lighten($accent, 20%);
+$accent7: lighten($accent, 30%);
+$accent8: lighten($accent, 40%);
+$accent9: lighten($accent, 50%);
+
+$grey0: darken($grey, 50%);
+$grey1: darken($grey, 40%);
+$grey2: darken($grey, 30%);
+$grey3: darken($grey, 20%);
+$grey4: darken($grey, 10%);
+
+$grey5: lighten($grey, 10%);
+$grey6: lighten($grey, 20%);
+$grey7: lighten($grey, 30%);
+$grey8: lighten($grey, 40%);
+$grey9: lighten($grey, 50%);

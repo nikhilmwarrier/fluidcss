@@ -1,0 +1,102 @@
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.center-align {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.center-children {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.y-align-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.x-align-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.margin {
+  margin: var(--margin);
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.padding {
+  padding: var(--padding);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.sans-font {
+  font-family: var(--sans-font);
+}
+
+.serif-font {
+  font-family: var(--serif-font);
+}
+
+.mono-font {
+  font-family: var(--mono-font);
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 70%;
+  }
+}

@@ -1,0 +1,29 @@
+@use "../abstracts/colors" as c;
+
+.grey {
+  background-color: var(--grey);
+}
+.grey-text {
+  color: var(--grey);
+}
+.accent {
+  background-color: var(--accent);
+}
+.accent-text {
+  color: var(--accent);
+}
+
+@for $i from 0 through 9 {
+  .grey#{$i} {
+    background-color: var(--grey#{$i});
+  }
+  .grey#{$i}-text {
+    color: var(--grey#{$i});
+  }
+  .accent#{$i} {
+    background-color: var(--accent#{$i});
+  }
+  .accent#{$i}-text {
+    color: var(--accent#{$i});
+  }
+}

@@ -1,0 +1,45 @@
+@use "abstracts/fonts" as font;
+@use "abstracts/colors" as col;
+@use "utility/box-model" as boxModel;
+@use "grid/grid" as grid;
+
+:root {
+  --accent: #{col.$accent};
+  --accent0: #{col.$accent0};
+  --accent1: #{col.$accent1};
+  --accent2: #{col.$accent2};
+  --accent3: #{col.$accent3};
+  --accent4: #{col.$accent4};
+
+  --accent5: #{col.$accent5};
+  --accent6: #{col.$accent6};
+  --accent7: #{col.$accent7};
+  --accent8: #{col.$accent8};
+  --accent9: #{col.$accent9};
+
+  --accent-semitransparent-2: #{tranparentize(col.$accent, 0.2)};
+  --accent-semitransparent-5: #{tranparentize(col.$accent, 0.5)};
+  --accent-semitransparent-7: #{tranparentize(col.$accent, 0.7)};
+
+  --grey: #{col.$grey};
+  --grey0: #{col.$grey0};
+  --grey1: #{col.$grey1};
+  --grey2: #{col.$grey2};
+  --grey3: #{col.$grey3};
+  --grey4: #{col.$grey4};
+
+  --grey5: #{col.$grey5};
+  --grey6: #{col.$grey6};
+  --grey7: #{col.$grey7};
+  --grey8: #{col.$grey8};
+  --grey9: #{col.$grey9};
+
+  --sans-font: #{font.$sans};
+  --serif-font: #{font.$serif};
+  --mono-font: #{font.$mono};
+
+  --margin: #{boxModel.$margin};
+  --padding: #{boxModel.$padding};
+
+  --grid-margin: #{grid.$margin};
+}
