@@ -1,0 +1,59 @@
+.toggle {
+	-webkit-tap-highlight-color: transparent;
+
+	--width: 3rem;
+	--height: calc(var(--width) / 2);
+	--toggle-border-radius: calc(var(--height) / 2);
+
+	display: inline-flex;
+	cursor: pointer;
+	outline: none;
+	position: relative;
+}
+
+.toggle-input {
+	// display: none;
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	opacity: 0;
+}
+
+.toggle-input:checked + .toggle-switch {
+	background-color: var(--accent);
+}
+
+.toggle-input:focus + .toggle-switch {
+	box-shadow: 0 0 0 3px var(--accent-semitransparent-5);
+}
+
+.toggle-input:focus:not(:focus-visible) + .toggle-switch {
+	box-shadow: 0 0 1px rgba($color: #000000, $alpha: 0.5);
+}
+
+.toggle-switch {
+	position: relative;
+	width: var(--width);
+	height: var(--height);
+	border-radius: var(--toggle-border-radius);
+	background-color: var(--grey5);
+	margin-right: 1rem;
+	transition: all 0.1s;
+}
+
+.toggle-switch::after {
+	--toggle-circle-spacing: 0.3rem;
+	content: "";
+	position: absolute;
+	top: var(--toggle-circle-spacing);
+	left: var(--toggle-circle-spacing);
+	height: calc(var(--height) - calc(var(--toggle-circle-spacing) * 2));
+	width: calc(var(--height) - calc(var(--toggle-circle-spacing) * 2));
+	border-radius: var(--toggle-border-radius);
+	background-color: var(--grey9);
+	transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.toggle-input:checked + .toggle-switch::after {
+	transform: translateX(var(--height));
+}

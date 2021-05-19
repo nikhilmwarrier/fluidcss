@@ -1,0 +1,70 @@
+@for $l from 1 through 6 {
+	h#{$l},
+	.h#{$l} {
+		font-weight: normal;
+		color: var(--grey3);
+	}
+}
+
+h1,
+.h1 {
+	font-size: 3.5rem;
+	line-height: 4.5rem;
+}
+
+h2,
+.h2 {
+	font-size: 2.3rem;
+	line-height: 3.5rem;
+}
+
+h3,
+.h3 {
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+h4,
+.h4 {
+	font-size: 1.8rem;
+	line-height: 3rem;
+}
+
+h5,
+.h5 {
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+
+h6,
+.h6 {
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+
+p {
+	font-size: 1rem;
+	color: var(--grey1);
+	line-height: 1.5rem;
+}
+
+::selection {
+	background-color: var(--accent6);
+	color: var(--grey9);
+}
+
+kbd {
+	background: var(--grey8);
+	font-size: 0.8rem;
+	line-height: 2rem;
+	vertical-align: middle;
+	padding: calc(0.125rem - 2px) 0.25rem 0.125rem 0.25rem;
+	border-radius: var(--border-radius);
+	border: 1px solid var(--grey7);
+	border-bottom-width: 3px;
+	font-family: var(--mono-font);
+}
+
+kbd::selection {
+	background: var(--grey5);
+}

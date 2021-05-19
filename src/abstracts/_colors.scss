@@ -1,4 +1,5 @@
 $accent: rgb(132, 0, 255);
+// $tint: rgb(255, 235, 211);
 $grey: #888;
 
 $accent0: darken($accent, 50%);
@@ -12,6 +13,10 @@ $accent6: lighten($accent, 20%);
 $accent7: lighten($accent, 30%);
 $accent8: lighten($accent, 40%);
 $accent9: lighten($accent, 50%);
+
+$accentSemitransparent2: transparentize($accent, 0.2);
+$accentSemitransparent5: transparentize($accent, 0.5);
+$accentSemitransparent7: transparentize($accent, 0.7);
 
 $grey0: darken($grey, 50%);
 $grey1: darken($grey, 40%);

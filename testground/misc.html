@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../dist/fluid.css" />
+		<script src="../lib/popper.min.js" defer></script>
+		<script src="../dist/fluid.js" defer></script>
+		<title>FluidCSS Docs (rewrite 0.7): Modal Component Demo</title>
+	</head>
+	<body>
+		<div class="container">
+			<section class="section" id="tooltips">
+				<h2>Tooltips</h2>
+				<p>
+					<span tabindex="0" data-tooltip="top" title="Hello! I'm da tooltip!">
+						Tooltip top! </span
+					><br />
+					<span tabindex="0" data-tooltip="left" title="Hello! I'm da tooltip!">
+						Tooltip left! </span
+					><br />
+					<span
+						tabindex="0"
+						data-tooltip="right"
+						title="Hello! I'm da tooltip!"
+					>
+						Tooltip right! </span
+					><br />
+					<span
+						tabindex="0"
+						data-tooltip="bottom"
+						title="Hello! I'm da tooltip!"
+					>
+						Tooltip bottom!
+					</span>
+				</p>
+			</section>
+			<section class="section" id="toggle-switches">
+				<h2>Toggle Switches</h2>
+				<p>
+					<label class="toggle">
+						<input type="checkbox" class="toggle-input" role="switch" />
+						<span class="toggle-switch"></span>
+						A fast WiFi network you hacked into
+					</label>
+				</p>
+			</section>
+			<section class="section" id="checkboxes">
+				<h2>Toggle Switches</h2>
+				<p>
+					<label class="checkbox">
+						<input type="checkbox" class="checkbox-input" checked="" />
+						<span class="checkbox-box"></span>
+						Sandwiches
+					</label>
+				</p>
+			</section>
+			<section class="section" id="modals">
+				<div class="margin-y">
+					<h2>Modal</h2>
+					<button class="btn ripple-light" data-open-modal="#modal0">
+						Open Demo Modal
+					</button>
+					<div class="modal-backdrop" id="modal0">
+						<div class="modal">
+							<div class="modal-header">
+								<h4>Hello!</h4>
+								<button class="close-btn">&times;</button>
+							</div>
+							<div class="modal-content">
+								<p>This a demo modal for doing literally anything</p>
+								<p>This is the best way to annoy users</p>
+								<p>
+									Either use the close button or the <kbd>esc</kbd> key to exit
+								</p>
+							</div>
+							<div class="modal-footer"></div>
+						</div>
+					</div>
+					Tip: Use <kbd>esc</kbd> key to close the modal
+				</div>
+			</section>
+			<section class="section" id="cards">
+				<h2>Cards</h2>
+				<div class="row padding-y">
+					<div class="card col s12 m8 l4">
+						<h4>Hello!</h4>
+						<p>Here you go! Some dummy text</p>
+						<p class="padding-y">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit id
+							voluptate iusto asperiores unde enim.
+						</p>
+						<button class="btn ripple-light">Click Me</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- <div class="fl-toast">
+				Error: Password must contain one Cyrillic character
+			</div> -->
+		</div>
+	</body>
+</html>

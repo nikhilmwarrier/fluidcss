@@ -1,0 +1,106 @@
+[data-tooltip]:hover,
+[data-tooltip]:focus {
+	outline: none;
+	text-decoration: underline dotted var(--grey6);
+}
+
+.fl-tooltip {
+	display: none;
+	background: #1e1e1e;
+	color: #fff;
+	text-align: center;
+	font-size: 80%;
+	padding: calc(var(--padding) / 4) calc(var(--padding) / 2);
+	border-radius: var(--border-radius);
+}
+
+.fl-tooltip[data-show] {
+	display: block;
+}
+
+.fl-tooltip {
+	background: #333;
+	color: white;
+	padding: 0.5rem;
+	font-size: 80%;
+	border-radius: var(--border-radius);
+	display: none;
+}
+
+.fl-tooltip[data-show] {
+	display: block;
+}
+
+.fl-tooltip [data-popper-arrow],
+.fl-tooltip [data-popper-arrow]::before {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background: inherit;
+}
+
+.fl-tooltip [data-popper-arrow] {
+	visibility: hidden;
+	animation: fl-tooltip-arrow 0.6s ease;
+}
+
+.fl-tooltip [data-popper-arrow]::before {
+	visibility: visible;
+	content: "";
+	transform: rotate(45deg);
+}
+
+.fl-tooltip[data-popper-placement^="top"] > [data-popper-arrow] {
+	bottom: -4px;
+}
+
+.fl-tooltip[data-popper-placement^="bottom"] > [data-popper-arrow] {
+	top: -4px;
+}
+
+.fl-tooltip[data-popper-placement^="left"] > [data-popper-arrow] {
+	right: 0;
+}
+
+.fl-tooltip[data-popper-placement^="right"] > [data-popper-arrow] {
+	left: -8px;
+}
+
+@mixin fl-tooltip-anim($dir) {
+	.fl-tooltip[data-popper-placement^="#{$dir}"] {
+		animation: fl-tooltip-#{$dir} 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+	}
+}
+
+@include fl-tooltip-anim(top);
+@include fl-tooltip-anim(bottom);
+@include fl-tooltip-anim(left);
+@include fl-tooltip-anim(right);
+
+@keyframes fl-tooltip-top {
+	from {
+		opacity: 0;
+		bottom: -3px;
+	}
+}
+
+@keyframes fl-tooltip-bottom {
+	from {
+		opacity: 0;
+		top: -3px;
+	}
+}
+
+@keyframes fl-tooltip-left {
+	from {
+		opacity: 0;
+		right: -3px;
+	}
+}
+
+@keyframes fl-tooltip-right {
+	from {
+		opacity: 0;
+		left: -3px;
+	}
+}

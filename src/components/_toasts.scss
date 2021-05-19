@@ -1,0 +1,40 @@
+.fl-toast {
+	position: fixed;
+	bottom: 1rem;
+	// left: 0;
+	right: 1rem;
+	// margin: auto;
+	background: var(--grey1);
+	color: var(--grey8);
+	text-align: left;
+	font-size: 1rem;
+	width: 300px;
+	padding: calc(var(--padding) / 1) var(--padding);
+	border-radius: var(--border-radius);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: default;
+	text-overflow: ellipsis;
+	transition: all 0.2s;
+}
+
+.fl-toast.hidden {
+	right: -100%;
+}
+
+.fl-toast::selection {
+	background: var(--grey3);
+}
+
+@media (max-width: 600px) {
+	.fl-toast {
+		width: 90%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.fl-toast.hidden {
+		left: 100%;
+	}
+}

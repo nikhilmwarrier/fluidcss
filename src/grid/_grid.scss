@@ -48,8 +48,49 @@ $margin: 1rem;
 }
 
 @media screen and (max-width: 600px) {
-  .hide-on-s {
-    display: none;
+  .hide-on- {
+    &s,
+    &s-and-above,
+    &m-and-below,
+    &l-and-below,
+    &xl-and-below {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+  .hide-on- {
+    &s-and-above,
+    &m,
+    &m-and-below,
+    &m-and-above,
+    &l-and-below {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .hide-on- {
+    &s-and-above,
+    &m-and-above,
+    &l,
+    &l-and-below,
+    &l-and-above {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hide-on- {
+    &s-and-above,
+    &m-and-above,
+    &l-and-above,
+    &xl {
+      display: none;
+    }
   }
 }
 
